@@ -39,7 +39,7 @@ public class StudentRegisterServlet extends HttpServlet {
         StudentRegisterDao studentRegisterDao = new StudentRegisterDao();
         try {
             studentRegisterDao.registerStudent(student);
-            RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/home.jsp");
+            RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("studenthome.jsp");
             dispatcher.forward(request, response);
         } catch (ClassNotFoundException | SQLException e) {
             e.printStackTrace();
