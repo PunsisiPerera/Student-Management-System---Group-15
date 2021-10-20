@@ -28,6 +28,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/group15/sms/studentmanagementsystembe/controller/login/StudentRegisterServlet.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/main/java/com/group15/sms/studentmanagementsystembe/dao/LoginDao.java">
           <value>
             <set />
@@ -43,6 +48,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/group15/sms/studentmanagementsystembe/dao/StudentRegisterDao.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/main/java/com/group15/sms/studentmanagementsystembe/model/LoginModel.java">
           <value>
             <set />
@@ -53,7 +63,22 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/main/webapp/admin/employeeRegister.jsp">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/main/webapp/css/signin.css">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/webapp/css/studentHome.css">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/webapp/css/studentRegister.css">
           <value>
             <set />
           </value>
@@ -69,6 +94,21 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/src/main/webapp/login.jsp">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/webapp/officeAdmin/studentRegister.jsp">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/webapp/student/home.jsp">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/webapp/teacher/teacherHome.jsp">
           <value>
             <set />
           </value>

@@ -35,8 +35,8 @@ public class LoginServlet extends HttpServlet {
                     if(loginDao.validateStaff(loginModel))
                     {
                         HttpSession session = request.getSession();
-                        session.setAttribute("email",email);
-                        response.sendRedirect("home.jsp");
+                        session.setAttribute("name",email);
+                        response.sendRedirect("officeAdmin/studentRegister.jsp");
                     }
                     else
                     {
@@ -55,7 +55,7 @@ public class LoginServlet extends HttpServlet {
                     {
                         HttpSession session = request.getSession();
                         session.setAttribute("email",email);
-                        response.sendRedirect("home.jsp");
+                        response.sendRedirect("student/home.jsp");
                     }
                     else
                     {
@@ -72,7 +72,7 @@ public class LoginServlet extends HttpServlet {
                     {
                         HttpSession session = request.getSession();
                         session.setAttribute("email",email);
-                        response.sendRedirect("home.jsp");
+                        response.sendRedirect("teacher/teacherHome.jsp");
                     }
                     else
                     {
