@@ -1,5 +1,7 @@
+com\group15\sms\studentmanagementsystembe\dao\StudentRegisterDao.class
+com\group15\sms\studentmanagementsystembe\dao\LoginDao.class
 com\group15\sms\studentmanagementsystembe\controller\login\LoginServlet.class
 com\group15\sms\studentmanagementsystembe\model\LoginModel.class
-com\group15\sms\studentmanagementsystembe\dao\LoginDao.class
+com\group15\sms\studentmanagementsystembe\controller\login\StudentRegisterServlet.class
 com\group15\sms\studentmanagementsystembe\HelloServlet.class
 com\group15\sms\studentmanagementsystembe\model\Student.class
