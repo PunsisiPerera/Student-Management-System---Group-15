@@ -13,4 +13,13 @@
         <url-pattern>/InquiryServlet</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>ViewTeachersServlet</servlet-name>
+        <servlet-class>com.group15.sms.studentmanagementsystembe.controller.ViewTeachersServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ViewTeachersServlet</servlet-name>
+        <url-pattern>/ViewTeachersServlet</url-pattern>
+    </servlet-mapping>
+
 </web-app>
