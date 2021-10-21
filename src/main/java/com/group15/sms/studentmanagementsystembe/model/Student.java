@@ -12,6 +12,22 @@ public class Student {
     private String contact_no;
     private String security;
 
+    public Student() {
+    }
+
+    public Student(String studentID, String f_name, String l_name, String address, String email, String password, String confPassword, String qrCode, String contact_no, String security) {
+        this.studentID = studentID;
+        this.f_name = f_name;
+        this.l_name = l_name;
+        this.address = address;
+        this.email = email;
+        this.password = password;
+        this.confPassword = confPassword;
+        this.qrCode = qrCode;
+        this.contact_no = contact_no;
+        this.security = security;
+    }
+
     public String getConfPassword() {
         return confPassword;
     }
