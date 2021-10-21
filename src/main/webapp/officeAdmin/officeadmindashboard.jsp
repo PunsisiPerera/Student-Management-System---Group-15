@@ -24,7 +24,7 @@
 			<div class="al1">
 				<div class="card">
 					<div class="container">
-						<h2><a href="registrationform.jsp">Register Student</a></h2> 
+						<h2><a href="studentRegister.jsp">Register Student</a></h2> 
 					</div>
 				</div>
 			</div>
