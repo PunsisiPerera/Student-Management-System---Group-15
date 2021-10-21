@@ -1,7 +1,7 @@
 package com.group15.sms.studentmanagementsystembe.model;
 
 public class OfficeAdmin {
-    private String staffID;
+//    private String staffID;
     private String f_name;
     private String l_name;
     private String address;
@@ -12,13 +12,13 @@ public class OfficeAdmin {
     private String date_joined;
     private String security;
 
-    public String getStaffID() {
-        return staffID;
-    }
-
-    public void setStaffID(String staffID) {
-        this.staffID = staffID;
-    }
+//    public String getStaffID() {
+//        return staffID;
+//    }
+//
+//    public void setStaffID(String staffID) {
+//        this.staffID = staffID;
+//    }
 
     public String getF_name() {
         return f_name;

@@ -55,7 +55,7 @@
             <p class=textdecors class=removepadding>New Password:</p>
             <input type="password" id="pass1" name="pass" placeholder="Enter your new password"><br><br>
             <p class=textdecors class=removepadding>Confirm Password:</p>
-            <input type="password" id="pass" name="pass" placeholder="Enter your new password again"><br><br>
+            <input type="password" id="pass" name="passs" placeholder="Enter your new password again"><br><br>
             <br /><br /><br />
             <input type="submit" name="submitbutton4" value="Sign Up"><br><br><br><br><br><br>
         </form>
