@@ -2,7 +2,7 @@
 <html>
 <head>
 <title>Create New Class</title>
-<link rel="stylesheet" href="./createnewclass.css">
+<link rel="stylesheet" href="../css/createnewclass.css">
 <script src="https://kit.fontawesome.com/e1eaef53f0.js" crossorigin="anonymous"></script>
 </head>
     <body>
