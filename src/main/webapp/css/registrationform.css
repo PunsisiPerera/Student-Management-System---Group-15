@@ -1,7 +1,7 @@
 /*External CSS for registraion form page*/
 
 body {
-  min-height: 200vh;
+  min-height: 10vh;
 	background-image: url("../bg2.jpg");
 	background-size: cover;
   margin: 0px;
@@ -18,7 +18,7 @@ body {
   background: rgba(255, 255, 255, 0.8);
   margin: 0 auto;
   padding-bottom: 25px;
-  padding-top: 15px;
+  padding-top: 2px;
   padding-left:25px;
   padding-right:25px;
   
