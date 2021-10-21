@@ -83,7 +83,8 @@ p, h1, h2{
 }
 
 .removepadding{
-	margin-top: 40px;
+	margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 

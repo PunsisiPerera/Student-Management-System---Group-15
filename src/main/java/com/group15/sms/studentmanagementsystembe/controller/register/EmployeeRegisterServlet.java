@@ -14,6 +14,7 @@ public class EmployeeRegisterServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        System.out.println("called");
         String f_name = request.getParameter("user_name1");
         String l_name = request.getParameter("user_name2");
         String position = request.getParameter("userposition");
@@ -37,8 +38,7 @@ public class EmployeeRegisterServlet extends HttpServlet {
         EmployeeRegisterDao employeeRegisterDao = new EmployeeRegisterDao();
         try{
             employeeRegisterDao.registerEmployee(officeAdmin);
-            RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("studenthome.jsp");
-            dispatcher.forward(request,response);
+            response.sendRedirect("admin/employeeregistration.jsp");
         }catch (ClassNotFoundException | SQLException e){
             e.printStackTrace();
         }
