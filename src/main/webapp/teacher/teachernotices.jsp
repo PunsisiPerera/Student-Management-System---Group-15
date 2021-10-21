@@ -24,19 +24,19 @@
 <div class="sidebar">
     <ul class="nav-links">
         <li>
-            <a href="#" class="active" >
+            <a href="./teachernotices.jsp" class="active" >
                 <i class='bx bx-notepad' ></i>
                 <span class="links_name">Manage Notices</span>
             </a>
         </li>
         <li>
-            <a href="#">
+            <a href="./attendance.jsp">
                 <i class='bx bx-book-content' ></i>
                 <span class="links_name">Attendance</span>
             </a>
         </li>
         <li>
-            <a href="#">
+            <a href="./assignments.jsp">
                 <i class='bx bx-book-open' ></i>
                 <span class="links_name">Assignments</span>
             </a>
@@ -71,7 +71,7 @@
             </button>
             <div class="dropdown-container">
                 <a href="./createnotices.jsp"><i class="fas fa-chevron-right"></i> Create Notices</a>
-                <a href="#"><i class="fas fa-chevron-right"></i> View Notices</a>
+                <a href="./viewnotice.jsp"><i class="fas fa-chevron-right"></i> View Notices</a>
 
             </div>
         </div>

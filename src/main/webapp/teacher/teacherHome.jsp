@@ -30,13 +30,13 @@
       </a>
     </li>
     <li>
-      <a href="#">
+      <a href="./attendance.jsp">
         <i class='bx bx-book-content' ></i>
         <span class="links_name">Attendance</span>
       </a>
     </li>
     <li>
-      <a href="#">
+      <a href="./assignments.jsp">
         <i class='bx bx-book-open' ></i>
         <span class="links_name">Assignments</span>
       </a>
