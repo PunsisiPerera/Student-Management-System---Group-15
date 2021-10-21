@@ -36,7 +36,7 @@ public class LoginServlet extends HttpServlet {
                     {
                         HttpSession session = request.getSession();
                         session.setAttribute("name",email);
-                        response.sendRedirect("officeAdmin/studentRegistration.jsp");
+                        response.sendRedirect("officeAdmin/officeadmindashboard.jsp");
                     }
                     else
                     {

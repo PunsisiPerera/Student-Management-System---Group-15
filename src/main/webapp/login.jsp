@@ -39,7 +39,7 @@
           <section class="additional"><p class=textdecors class=removepadding>Email:</p></section>
           <input type="text" id="email" name="email" placeholder="Enter your email address">
           <br />
-          <section class="additional"><p class=textdecors2 class=removepadding>Password:</p></section>
+          <section class="additional"><p class=textdecors class=removepadding>Password:</p></section>
           <input type="password" id="pass" name="pass" placeholder="Enter the password">
 
       <input type="submit" name="submitbutton4" value="Sign In">

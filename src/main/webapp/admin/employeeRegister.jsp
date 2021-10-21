@@ -32,7 +32,7 @@
     <div class="hdiv">
         <h1 align="center" class=removepadding>Sign Up</h1>
         <p class=removepadding>Welcome!<br /><br /><br /><p>
-        <form method="post" action="EmployeeRegisterServlet">
+        <form method="post" action="${pageContext.request.contextPath}/EmployeeRegisterServlet">
             <br /><br /><br /><br />
             <h1>Employee Registration Form</h1>
 
