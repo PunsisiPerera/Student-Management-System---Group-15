@@ -21,6 +21,7 @@ body {
   padding-left:25px;
   padding-right:25px;
   
+  
   /*centering div*/
   width: 400px;
   height: 180px;
@@ -28,6 +29,7 @@ body {
   top: 50%;
   left: 50%;
   margin: -270px 0 0 -250px; 
+  
   
 }
 
@@ -151,13 +153,4 @@ select{
 }
 
 
-/* Style the footer */
-.footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  background-color:#2a2b2b;
-  background-attachment: fixed;
-  padding: 10px;
-  text-align: center;
-}
+

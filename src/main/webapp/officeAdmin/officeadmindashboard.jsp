@@ -10,14 +10,13 @@
 <div>
 		<ul>
 			
-	            <li style="float:right"><a href="../index.html"><i class="fas fa-sign-out-alt"></i> Sign Out</a></li>   			
-	            <li style="float:right"><a href="../contactus.html"><i class="fas fa-address-book"></i> Contact Us</a></li>
-	            <li style="float:right"><a href="../help.html"><i class="fas fa-hands-helping"></i> Help</a></li>
-	            <li style="float:right"><a href="../aboutus.html"><i class="fas fa-users"></i> About Us</a></li>
-	            <li style="float:right"><a href="./officeadmindashboard.html" class="active" ><i class="fas fa-columns"></i> Dashboard</a></li>
+	            <li style="float:right"><a href="../index.jsp"><i class="fas fa-sign-out-alt"></i> Sign Out</a></li>   			
+	            <li style="float:right"><a href="../contactus.jsp"><i class="fas fa-address-book"></i> Contact Us</a></li>
+	            <li style="float:right"><a href="../help.jsp"><i class="fas fa-hands-helping"></i> Help</a></li>
+	            <li style="float:right"><a href="../aboutus.jsp"><i class="fas fa-users"></i> About Us</a></li>
+	            
 		</ul>
-</div>
-
+	</div> 
 <!-------- main parts---------->
 		<br /><br /><br />
 		<h1 align="Center">Office Admin Dashboard</h1>
@@ -25,7 +24,7 @@
 			<div class="al1">
 				<div class="card">
 					<div class="container">
-						<h2><a href="#">Register Student</a></h2> 
+						<h2><a href="registrationform.jsp">Register Student</a></h2> 
 					</div>
 				</div>
 			</div>
@@ -33,7 +32,7 @@
 			<div class="al2">
 				<div class="card">
 					<div class="container">
-						<h2><a href="#">Generate Reports</a></h2> 
+						<h2><a href="generatereports.jsp">Generate Reports</a></h2> 
 					</div>
 				</div>
 			</div>
@@ -41,7 +40,7 @@
 			<div class="al3">
 				<div class="card">
 					<div class="container">
-						<h2><a href="#">Mark Attendance</a></h2> 
+						<h2><a href="markattendance.jsp">Mark Attendance</a></h2> 
 					</div>
 				</div>
 			</div>
@@ -49,7 +48,7 @@
 			<div class="al4">
 				<div class="card">
 					<div class="container">
-						<h2><a href="#">Mark Fee Payments</a></h2> 
+						<h2><a href="markfeepayments.jsp">Mark Fee Payments</a></h2> 
 					</div>
 				</div>
 			</div>
@@ -57,7 +56,7 @@
 			<div class="al5">
 				<div class="card">
 					<div class="container">
-						<h2><a href="#">Manage General Notices</a></h2> 
+						<h2><a href="managegeneralnotices.jsp">Manage General Notices</a></h2> 
 					</div>
 				</div>
 			</div>
