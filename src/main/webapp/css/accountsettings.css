@@ -105,11 +105,9 @@ li a:hover:not(.active) {
     width:150px;
     height: 40px;
     float: left;
-
     background-color: #001D3D;
     font-family:Trebuchet MS;
     color: white;
-
     border: none;
     border-radius: 20px;
     font-size:15px;
@@ -120,6 +118,22 @@ li a:hover:not(.active) {
     margin-left: 75px;
 }
 
+.container button{
+    width:150px;
+    height: 40px;
+    float: left;
+    background-color: #001D3D;
+    font-family:Trebuchet MS;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size:15px;
+    cursor: pointer;
+    text-align:center;
+    display: block;
+    margin: 10px;
+    margin-left: 75px;
+}
 .delete input[type=submit]{
     background-color:red;
 }
