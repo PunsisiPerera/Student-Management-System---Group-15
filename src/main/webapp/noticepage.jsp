@@ -1,8 +1,10 @@
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
 <html> 
 <head>
-<title>Dashboard |Office Admin </title>
-<link rel="stylesheet" href="../css/officeadmindashboard.css">
+<title>Notice Page </title>
+<link rel="stylesheet" href="./css/noticepage.css">
 <script src="https://kit.fontawesome.com/e1eaef53f0.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -19,12 +21,12 @@
 	</div> 
 <!-------- main parts---------->
 		<br /><br /><br />
-		<h1 align="Center">Office Admin Dashboard</h1>
+		<h1 align="Center">Notices</h1>
 		<br /><br /><br />
 			<div class="al1">
 				<div class="card">
 					<div class="container">
-						<h2><a href="studentRegister.jsp">Register Student</a></h2> 
+						 
 					</div>
 				</div>
 			</div>
@@ -32,7 +34,7 @@
 			<div class="al2">
 				<div class="card">
 					<div class="container">
-						<h2><a href="generatereports.jsp">Generate Reports</a></h2> 
+						 
 					</div>
 				</div>
 			</div>
@@ -40,7 +42,7 @@
 			<div class="al3">
 				<div class="card">
 					<div class="container">
-						<h2><a href="markattendance.jsp">Mark Attendance</a></h2> 
+						
 					</div>
 				</div>
 			</div>
@@ -48,7 +50,7 @@
 			<div class="al4">
 				<div class="card">
 					<div class="container">
-						<h2><a href="markfeepayments.jsp">Mark Fee Payments</a></h2> 
+						
 					</div>
 				</div>
 			</div>
@@ -56,7 +58,7 @@
 			<div class="al5">
 				<div class="card">
 					<div class="container">
-						<h2><a href="managegeneralnotices.jsp">Manage General Notices</a></h2> 
+						
 					</div>
 				</div>
 			</div>
