@@ -20,14 +20,13 @@
 	            <li style="float:right"><a href="../contactus.jsp"><i class="fas fa-address-book"></i> Contact Us</a></li>
 	            <li style="float:right"><a href="../help.jsp"><i class="fas fa-hands-helping"></i> Help</a></li>
 	            <li style="float:right"><a href="../aboutus.jsp"><i class="fas fa-users"></i> About Us</a></li>
-	            <li style="float:right"><a href="admindashboard.jsp" class="active" ><i class="fas fa-columns"></i> Dashboard</a></li>
+	            <li style="float:right"><a href="admindashboard.jsp"><i class="fas fa-columns"></i> Dashboard</a></li>
 		</ul>
 
 			</div>
 		</div>
 </div>
 
-<img src="../img/avatar.png" alt="Avatar" class="avatar" style="padding:0px;">
 
 	<div class="main">
 		<h2>View Existing Classes</h2>
@@ -109,7 +108,7 @@
 </div>
 
 <div class="abc">
-    <input type="submit" name="submitbutton4" value="Create New Class"><br>
+	<a href="./createnewclass.jsp"><button>Create New Class</button></a>
 </div>
             
 
