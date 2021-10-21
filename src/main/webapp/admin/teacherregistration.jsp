@@ -22,8 +22,8 @@
 
 	<div class="hdiv">
 		<form method="post" action="${pageContext.request.contextPath}/TeacherRegisterServlet">
-                        <br />
-                        <h1>Teacher Registration Form</h1>
+  
+                        <h1>Teacher Registration Form</h1><br><br>
 
 				<p class=textdecors class=removepadding>Teacher ID:</p>
 				<input type="text" class="name" name="teacherID" placeholder="Enter your name with initials">
