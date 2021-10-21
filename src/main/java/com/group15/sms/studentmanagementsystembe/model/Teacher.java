@@ -10,6 +10,20 @@ public class Teacher {
     private String contact_no;
     private String security;
 
+    public Teacher() {
+    }
+
+    public Teacher(String teacherID, String f_name, String l_name, String address, String email, String password, String contact_no, String security) {
+        this.teacherID = teacherID;
+        this.f_name = f_name;
+        this.l_name = l_name;
+        this.address = address;
+        this.email = email;
+        this.password = password;
+        this.contact_no = contact_no;
+        this.security = security;
+    }
+
     public String getTeacherID() {
         return teacherID;
     }
