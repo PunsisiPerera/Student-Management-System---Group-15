@@ -16,7 +16,8 @@
 	            <li style="float:right"><a href="../aboutus.jsp"><i class="fas fa-users"></i> About Us</a></li>
 	            
 		</ul>
-	</div> 
+	</div>
+
 <!-------- main parts---------->
 		<br /><br /><br />
 		<h1 align="Center">Office Admin Dashboard</h1>

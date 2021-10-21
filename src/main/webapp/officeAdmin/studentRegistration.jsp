@@ -26,6 +26,7 @@
 
 </div>
 
+<a href="./ofiiceadminaccountsettings.jsp"><img src="../img/avatar.png" alt="Avatar" class="avatar" style="padding:0px;"></a>
 
 <div class="hdiv">
     <h1 align="center" class=removepadding>Sign Up</h1>
