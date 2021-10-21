@@ -17,7 +17,7 @@
 
 <ul>
 
-    <li style="float:right"><a href=""><i class="fas fa-sign-out-alt"></i> Sign Out</a></li>
+    <li style="float:right"><a href="../"><i class="fas fa-sign-out-alt"></i> Sign Out</a></li>
     <li style="float:right"><a href=""><i class="fas fa-address-book"></i> Contact Us</a></li>
     <li style="float:right"><a href=""><i class="fas fa-hands-helping"></i> Help</a></li>
     <li style="float:right"><a href=""><i class="fas fa-users"></i> About Us</a></li>

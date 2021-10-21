@@ -82,12 +82,12 @@ p, h1, h2{
     text-align:left;
 }
 
-#textdecors2{
+.textdecors2{
     font-weight: bold;
     text-align:left;
 }
 
-#removepadding{
+.removepadding{
     margin-top: 40px;
 }
 #removepadding1{
@@ -150,4 +150,25 @@ li a:hover:not(.active) {
     background-attachment: fixed;
     padding: 10px;
     text-align: center;
+}
+
+select{
+    margin-top:-50px;
+    height: 20px;
+    width: 50%;
+    font-family:Trebuchet MS;
+}
+
+.rtop{
+    font-size:18px;
+    margin-top:-20px;
+}
+
+.hdiv select{
+    margin-top:-10px;
+}
+
+.additional{
+    float:left;
+    font-size: 18px;
 }
