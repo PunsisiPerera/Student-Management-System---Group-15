@@ -36,7 +36,7 @@ public class LoginServlet extends HttpServlet {
                     {
                         HttpSession session = request.getSession();
                         session.setAttribute("name",email);
-                        response.sendRedirect("officeAdmin/studentRegister.jsp");
+                        response.sendRedirect("officeAdmin/officeadmindashboard.jsp");
                     }
                     else
                     {
@@ -89,7 +89,7 @@ public class LoginServlet extends HttpServlet {
                     {
                         HttpSession session = request.getSession();
                         session.setAttribute("email",email);
-                        response.sendRedirect("");
+                        response.sendRedirect("admin/employeeregistration.jsp");
                     }
                     else
                     {

@@ -1,4 +1,4 @@
-<%--
+<%@ page import="java.util.Date" %><%--
   Created by IntelliJ IDEA.
   User: 07688
   Date: 21-Oct-21
@@ -27,13 +27,18 @@
   <h1>Need some help?</h1>
   <p>Tell us what's in your mind and we'll get back to you!</p>
 
-  <form method="post" action="#">
+  <form method="post" action="InquiryServlet">
     Enter email address:<br />
-    <input type="text" id="email" name="email" required>
+    <input type="text" class="email" name="email" required>
+    <br /><br />
+    Subject:<br />
+    <input type="text" class="email" name="subject" required>
     <br /><br />
     Enter your inquiry:<br /><br />
-    <textarea id="w3review" name="w3review" rows="13" cols="68" required></textarea>
+    <textarea id="w3review" name="inquiry" rows="13" cols="68" required></textarea>
     <br /><br />
+    <input type="hidden" name="status" value="Pending">
+    <input type="hidden" name="date" value="<%= (new Date()).toString()%>">
     <input type="submit" name="submitinquiry" value="Submit">
     <input type="reset" name="cancelinquiry" value="Cancel">
   </form>
