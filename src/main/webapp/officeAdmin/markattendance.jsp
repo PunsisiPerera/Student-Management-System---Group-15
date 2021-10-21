@@ -6,9 +6,6 @@
 <script src="https://kit.fontawesome.com/e1eaef53f0.js" crossorigin="anonymous"></script>
 </head>
     <body>
-
-      <form action="index.html" method="post">
-          
         <div>
 		<ul>
 			
@@ -37,18 +34,16 @@
             <option value="Arts2023">Arts2023</option>
             <option value="Commerce2023">Commerce2023</option>
         </select>
-        <br><br>    
-        
-       
-        <p class=textdecors class=removepadding>Enter Student ID Number:</p>
-	<input type="text" class="studentnumber" name="stno" placeholder="Enter the student number here"><br><br>
+        <br><br>
+            <p class=textdecors class=removepadding>Enter Student ID Number:</p>
+	    <input type="text" class="studentnumber" name="stno" placeholder="Enter the student number here"><br><br>
 	<input type="submit" name="submitbutton5" value="Search"><br><br>
 	
 	<textarea rows=20 cols=50></textarea><br><br><br>
 
-        
-        <input type="submit" name="submitbutton4" value="Mark Attendance"><br><br>
-	
+
+            <input type="submit" name="submitbutton4" value="Mark Attendance"><br><br>
+
         </form>
         </div>    
       

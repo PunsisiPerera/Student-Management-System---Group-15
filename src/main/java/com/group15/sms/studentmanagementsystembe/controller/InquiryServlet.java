@@ -8,9 +8,23 @@ import javax.servlet.http.*;
 import javax.servlet.annotation.*;
 import java.io.IOException;
 import java.sql.SQLException;
+import java.util.List;
 
 @WebServlet(name = "InquiryServlet", value = "/InquiryServlet")
 public class InquiryServlet extends HttpServlet {
+
+    @Override
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        InquiryDao inquiryDao = new InquiryDao();
+        try {
+            List <Inquiry>  inquiryList = inquiryDao.selectAllInquiry();
+            request.setAttribute("inquiryList",inquiryList);
+            RequestDispatcher dispatcher = request.getRequestDispatcher("admin/inquiry.jsp");
+            dispatcher.forward(request, response);
+        }catch (ClassNotFoundException | SQLException e){
+            e.printStackTrace();
+        }
+    }
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

@@ -23,11 +23,12 @@
 	</div>
 
 
-	<div class="hdiv" style="margin-top: 0px;">
+	<div class="hdiv">
+
 		<form method="post" action="${pageContext.request.contextPath}/EmployeeRegisterServlet">
 		<br /><br /><br /><br />
-                        <h1>Employee Registration Form</h1>
-                        
+                       <br /><br /> <br /><br /><h1>Employee Registration Form</h1>
+                        <br /><br />
                         <p class=textdecors class=removepadding>First Name:</p>
 			<input type="text" class="name" name="user_name1" placeholder="Enter your first name" required>
 			<br />

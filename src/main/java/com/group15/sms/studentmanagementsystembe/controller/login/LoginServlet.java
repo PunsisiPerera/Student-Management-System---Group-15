@@ -89,7 +89,7 @@ public class LoginServlet extends HttpServlet {
                     {
                         HttpSession session = request.getSession();
                         session.setAttribute("email",email);
-                        response.sendRedirect("admin/employeeregistration.jsp");
+                        response.sendRedirect("admin/admindashboard.jsp");
                     }
                     else
                     {
