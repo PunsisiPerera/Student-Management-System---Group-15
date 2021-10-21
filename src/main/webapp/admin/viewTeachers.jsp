@@ -1,3 +1,4 @@
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%--
   Created by IntelliJ IDEA.
   User: punsisi_p
@@ -41,21 +42,35 @@
         </thead>
 
         <tbody>
-        <tr>
-            <td align="center">test1</td>
-            <td align="center">test1</td>
-            <td align="center">test1</td>
-            <td align="center">test1</td>
-            <td align="center">test1</td>
-            <td align="center">test1</td>
-            <td>
-                <button>Update</button>
-                <section class="delete">
-                    <button>Delete</button>
-                    <section>
-            </td>
-        </tr>
+        <!--   for (Todo todo: todos) {  -->
+        <c:forEach var="teacher" items="${teacherList}">
+
+            <tr>
+                <td>
+                    <c:out value="${teacher.teacherID}" />
+                </td>
+                <td>
+                    <c:out value="${teacher.f_name}" />
+                </td>
+                <td>
+                    <c:out value="${teacher.l_name}" />
+                </td>
+                <td>
+                    <c:out value="${teacher.address}" />
+                </td>
+                <td>
+                    <c:out value="${teacher.email}" />
+                </td>
+                <td>
+                    <c:out value="${teacher.contact_no}" />
+                </td>
+
+                <td><a href="edit?id=<c:out value='${teacher.teacherID}' />">Edit</a> &nbsp;&nbsp;&nbsp;&nbsp; <a href="delete?id=<c:out value='${teacher.teacherID}' />">Delete</a></td>
+            </tr>
+        </c:forEach>
+        <!-- } -->
         </tbody>
+
     </table>
 </div>
 
