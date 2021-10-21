@@ -9,14 +9,14 @@
 
       <form action="index.html" method="post">
           
-        <div>
+       <div>
 		<ul>
 			
-	            <li style="float:right"><a href="../index.html"><i class="fas fa-sign-out-alt"></i> Sign Out</a></li>   			
-	            <li style="float:right"><a href="../contactus.html"><i class="fas fa-address-book"></i> Contact Us</a></li>
-	            <li style="float:right"><a href="../help.html"><i class="fas fa-hands-helping"></i> Help</a></li>
-	            <li style="float:right"><a href="../aboutus.html"><i class="fas fa-users"></i> About Us</a></li>
-	            <li style="float:right"><a href="./officeadmindashboard.html" class="active" ><i class="fas fa-columns"></i> Dashboard</a></li>
+	            <li style="float:right"><a href="../index.jsp"><i class="fas fa-sign-out-alt"></i> Sign Out</a></li>   			
+	            <li style="float:right"><a href="../contactus.jsp"><i class="fas fa-address-book"></i> Contact Us</a></li>
+	            <li style="float:right"><a href="../help.jsp"><i class="fas fa-hands-helping"></i> Help</a></li>
+	            <li style="float:right"><a href="../aboutus.jsp"><i class="fas fa-users"></i> About Us</a></li>
+	            <li style="float:right"><a href="officeadmindashboard.jsp" class="active" ><i class="fas fa-columns"></i> Dashboard</a></li>
 		</ul>
 	</div> 
 	
@@ -41,8 +41,16 @@
         <br><br>    
         
        
-        <p class=textdecors class=removepadding>Enter Student Number:</p>
+        <p class=textdecors class=removepadding>Enter the Student Number:</p>
 	<input type="text" class="studentnumber" name="stno" placeholder="Enter the student number here"><br><br>
+	<br />
+	<input type="submit" name="submitbutton5" value="Search"><br><br>
+	
+	
+    <textarea rows=20 cols=50></textarea>
+
+	   <p class=textdecors class=removepadding>Enter the amount:</p>
+	<input type="text" class="amount" name="amnt" placeholder="Enter the paid amount here"><br><br>
 	<br />
         
         <input type="submit" name="submitbutton4" value="Mark Fee Payment"><br><br>
@@ -51,11 +59,6 @@
         </div>    
       
         
-       <div class="footer">
- 		 <p style="color: white;">Copyright © 2021 - Group 12. All rights reserved.</p>
- 		 <p style="color: white;">Emergency</p>
-	</div>
 
-      
     </body>
 </html>
