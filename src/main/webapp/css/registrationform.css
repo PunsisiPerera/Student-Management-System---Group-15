@@ -127,4 +127,15 @@ li a:hover:not(.active) {
 
 
 
+/* Style the footer */
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 10%;
+  background-color:#2a2b2b;
+  background-attachment: fixed;
+  padding: 10px;
+  text-align: center;
+}
 
