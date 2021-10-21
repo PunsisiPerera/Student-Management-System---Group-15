@@ -22,4 +22,12 @@
         <url-pattern>/ViewTeachersServlet</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>ViewStudentServlet</servlet-name>
+        <servlet-class>com.group15.sms.studentmanagementsystembe.controller.ViewStudentServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ViewStudentServlet</servlet-name>
+        <url-pattern>/ViewStudentServlet</url-pattern>
+    </servlet-mapping>
 </web-app>

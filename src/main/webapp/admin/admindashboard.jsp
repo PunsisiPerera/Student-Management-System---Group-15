@@ -57,7 +57,7 @@
 			<div class="al5">
 				<div class="card">
 					<div class="container">
-						<h2><a href="./viewstudents.jsp">View Student List</a></h2>
+						<h2><a href="${pageContext.request.contextPath}/ViewStudentServlet">View Student List</a></h2>
 					</div>
 				</div>
 			</div>
