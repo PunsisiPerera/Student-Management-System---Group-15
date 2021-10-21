@@ -73,7 +73,7 @@
 			<div class="al7">
 				<div class="card">
 					<div class="container">
-						<h2><a href="#">Manage Inquiries</a></h2> 
+						<h2><a href="${pageContext.request.contextPath}/InquiryServlet">Go to servlet Manage Inquiries</a></h2>
 					</div>
 				</div>
 			</div>
