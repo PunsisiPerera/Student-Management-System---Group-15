@@ -2,12 +2,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>JSP - Hello World</title>
+    <title>Landing Page </title>
+    <link rel="stylesheet" href="./css/landing.css">
+    <script src="https://kit.fontawesome.com/e1eaef53f0.js" crossorigin="anonymous"></script>
 </head>
 <body>
-<h1><%= "Hello World!" %>
-</h1>
-<br/>
-<a href="hello-servlet">Hello Servlet</a>
+<!-----------Nav bar---------->
+<div>
+    <ul>
+        <li style="float:right"><a href="contactus.jsp"><i class="fas fa-address-book"></i> Contact Us</a></li>
+        <li style="float:right"><a href="help.jsp"><i class="fas fa-hands-helping"></i> Help</a></li>
+        <li style="float:right"><a href="aboutus.jsp"><i class="fas fa-users"></i> About Us</a></li>
+        <li style="float:right"><a href="index.jsp" class="active"><i class="fas fa-home"></i> Home</a></li>
+    </ul>
+</div>
+
+
+<div class="hdiv">
+    <img src="./img/dashboard.jpg" align="left" width=55% height=100%>
+    <h1 align="center"><br />Student Management System <br /> Pragathi Higher Education Institute<br /> Kandy, Sri Lanka</h1>
+    <br /><br /><br />
+    <button type="button" onclick="window.location.href='login.jsp'">Sign In</button>
+    <br /><br />
+    <button type="button" onclick="window.location.href='./officeadmin/registrationform.html'"> Sign Up as a Student</button>
+</div>
+
 </body>
 </html>
