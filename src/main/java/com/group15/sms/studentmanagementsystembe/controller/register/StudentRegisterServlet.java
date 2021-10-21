@@ -1,4 +1,4 @@
-package com.group15.sms.studentmanagementsystembe.controller.login;
+package com.group15.sms.studentmanagementsystembe.controller.register;
 
 import com.group15.sms.studentmanagementsystembe.dao.StudentRegisterDao;
 import com.group15.sms.studentmanagementsystembe.model.Student;
@@ -13,6 +13,7 @@ import java.sql.SQLException;
 public class StudentRegisterServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        System.out.println("called");
         String studentID = request.getParameter("id");
         String f_name = request.getParameter("user_name1");
         String l_name = request.getParameter("user_name2");
@@ -25,6 +26,7 @@ public class StudentRegisterServlet extends HttpServlet {
         String security = request.getParameter("userguardianname");
 
         Student student = new Student();
+
         student.setStudentID(studentID);
         student.setF_name(f_name);
         student.setL_name(l_name);
@@ -39,7 +41,7 @@ public class StudentRegisterServlet extends HttpServlet {
         StudentRegisterDao studentRegisterDao = new StudentRegisterDao();
         try {
             studentRegisterDao.registerStudent(student);
-            RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/home.jsp");
+            RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("student/home.jsp");
             dispatcher.forward(request, response);
         } catch (ClassNotFoundException | SQLException e) {
             e.printStackTrace();
