@@ -111,12 +111,12 @@ body{
 }
 
 .tab th,td{
-	width: 35px;
+	width: 100px;
 }
 
 input[type=submit]{
-  width: 60%;
-  height: -40px;
+  width: 200%;
+  height: 30px;
   background-color: #001D3D;
   font-family:Trebuchet MS;
   color: white;
@@ -130,15 +130,7 @@ input[type=submit]{
   margin: 0 auto;
 }
 
-
-input[type=submit]:hover {
-  background-color: #adadad;
-}
-
-
-.abc
-
-input[type=submit]{
+button, input[type=submit]{
   width: 20%;
   height: 40px;
   background-color: #001D3D;
@@ -154,10 +146,16 @@ input[type=submit]{
   margin: 0 auto;
 }
 
-
 input[type=submit]:hover {
-  background-color: #adadad;
+    background-color: #FFC300;
 }
+
+button:hover {
+    background-color: #FFC300;
+}
+
+
+
 
    
 

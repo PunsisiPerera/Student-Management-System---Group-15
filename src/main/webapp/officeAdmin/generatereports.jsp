@@ -18,10 +18,8 @@
 	            <li style="float:right"><a href="../aboutus.jsp"><i class="fas fa-users"></i> About Us</a></li>
 	            <li style="float:right"><a href="officeadmindashboard.jsp" class="active" ><i class="fas fa-columns"></i> Dashboard</a></li>
 		</ul>
-	</div> 
-       
-
-		<img src="../img/avatar.png" alt="Avatar" class="avatar" style="padding:0px;">
+	</div>
+          <a href="./ofiiceadminaccountsettings.jsp"><img src="../img/avatar.png" alt="Avatar" class="avatar" style="padding:0px;"></a>
         
         <div class="hdiv">
             <h1 align="center" class=removepadding>Generate Reports</h1>

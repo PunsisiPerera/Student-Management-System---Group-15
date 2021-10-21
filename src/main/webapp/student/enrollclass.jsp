@@ -103,7 +103,7 @@
 <div class="checkfee">
     <button style="width:190px; margin-left:580px; margin-top: 25px; margin-bottom: 25px;">Check Fees</button>
     <br /><br /><br /><br />
-    <p style="font-size: 18px;font-family:Trebuchet MS;margin-left:570px; margin-top: 50px; color: red;">Total due amount = Rs. 2500</p>
+    <p style="font-size: 18px;font-family:Trebuchet MS;margin-left:0px; margin-top: 50px; color: red;">Total due amount = Rs. 2500</p>
 </div>
 <!----------upload deposit slip------------>
 <div style="padding-left:5%; font-family:Trebuchet MS;">
