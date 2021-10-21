@@ -33,7 +33,7 @@ body {
 }
 
 /* email and password texboxes*/
-input[type=text], [type=password]{
+input[type=text], [type=password] [type=textarea]{
 	background-color:transparent;
 	width: 100%;
 	padding-bottom: 5px;
@@ -51,7 +51,7 @@ input[type=text], [type=password]{
 } 
 
 /*submit button*/
-input[type=submit]{
+input[type=submit] [type=reset]{
   width: 50%;
   height: 50px;
   background-color: #001D3D;

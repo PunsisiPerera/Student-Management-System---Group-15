@@ -9,18 +9,17 @@
 
       <form action="" method="post">
           
-	<div>
+       <div>
 		<ul>
 			
-	            <li style="float:right"><a href="../index.html"><i class="fas fa-sign-out-alt"></i> Sign Out</a></li>   			
-	            <li style="float:right"><a href="../contactus.html"><i class="fas fa-address-book"></i> Contact Us</a></li>
-	            <li style="float:right"><a href="../help.html"><i class="fas fa-hands-helping"></i> Help</a></li>
-	            <li style="float:right"><a href="../aboutus.html"><i class="fas fa-users"></i> About Us</a></li>
-	            <li style="float:right"><a href="./officeadmindashboard.html" class="active" ><i class="fas fa-columns"></i> Dashboard</a></li>
+	            <li style="***"><a href="../index.jsp"><i class="fas fa-sign-out-alt"></i> Sign Out</a></li>   			
+	            <li style="***"><a href="../contactus.jsp"><i class="fas fa-address-book"></i> Contact Us</a></li>
+	            <li style="***"><a href="../help.jsp"><i class="fas fa-hands-helping"></i> Help</a></li>
+	            <li style="***"><a href="../aboutus.jsp"><i class="fas fa-users"></i> About Us</a></li>
+	            <li style="***"><a href="officeadmindashboard.jsp" class="active" ><i class="fas fa-columns"></i> Dashboard</a></li>
 		</ul>
-
 	</div>
-
+  
 	<img src="../img/avatar.png" alt="Avatar" class="avatar" style="padding:0px;">
 
 	<div class="hdiv">
