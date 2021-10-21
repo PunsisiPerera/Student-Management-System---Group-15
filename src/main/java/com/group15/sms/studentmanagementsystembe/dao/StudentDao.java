@@ -23,7 +23,7 @@ public class StudentDao {
             String studentID = rs.getString("studentID");
             String f_name = rs.getString("f_name");
             String l_name = rs.getString("l_name");
-            String address = rs.getString("l_name");
+            String address = rs.getString("address");
             String email = rs.getString("email");
             String password = rs.getString("password");
             String confPassword = rs.getString("confPassword");
