@@ -8,7 +8,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Account Settings</title>
+    <title>Account Settings | Student</title>
     <link rel="stylesheet" href="../css/accountsettings.css">
     <script src="https://kit.fontawesome.com/e1eaef53f0.js" crossorigin="anonymous"></script>
     <head>
@@ -17,11 +17,11 @@
 
 <ul>
 
-    <li style="float:right"><a href="../"><i class="fas fa-sign-out-alt"></i> Sign Out</a></li>
-    <li style="float:right"><a href=""><i class="fas fa-address-book"></i> Contact Us</a></li>
-    <li style="float:right"><a href=""><i class="fas fa-hands-helping"></i> Help</a></li>
-    <li style="float:right"><a href=""><i class="fas fa-users"></i> About Us</a></li>
-    <li style="float:right"><a href=""><i class="fas fa-home"></i> Home</a></li>
+    <li style="float:right"><a href="../index.jsp"><i class="fas fa-sign-out-alt"></i> Sign Out</a></li>
+    <li style="float:right"><a href="../contactus.jsp"><i class="fas fa-address-book"></i> Contact Us</a></li>
+    <li style="float:right"><a href="../help.jsp"><i class="fas fa-hands-helping"></i> Help</a></li>
+    <li style="float:right"><a href="../aboutus.jsp"><i class="fas fa-users"></i> About Us</a></li>
+    <li style="float:right"><a href="studenthome.jsp"><i class="fas fa-home"></i> Home</a></li>
 </ul>
 
 
@@ -30,9 +30,10 @@
     <div class="container">
         <img src="../img/avatar.png" alt="Avatar" class="avatar">
         <form method="post" action="#">
-            <input type="submit" name="submitbutton1" Value="Update"><br /><br />
-            <input type="submit" value="Cancel"><br /><br />
-            <input type="submit" value="Change Password"><br /><br />
+            <input type="submit" name="submitbutton1" Value="Update"><br /><br /><br />
+        </form>
+        <a href="../resetpassword.jsp"><button style="width:150px; height: 40px; background-color: #001D3D; font-family:Trebuchet MS; color: white; border: none; border-radius: 20px; font-size:15px; text-align:center; margin: 10px; margin-left: 75px; display: block; cursor: pointer;">Change Password</button></a>
+        <form method="post" action="#">
             <div class="delete">
                 <input type="submit" value="Delete Account"><br /><br />
             </div>

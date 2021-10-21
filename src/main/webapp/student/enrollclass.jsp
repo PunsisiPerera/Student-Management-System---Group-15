@@ -9,7 +9,7 @@
 <html>
 <head>
     <title> Enroll in Class | Student </title>
-    <link rel="stylesheet" href="../css/studenthome.css">
+    <link rel="stylesheet" href="../css/studentHome.css">
     <script src="https://kit.fontawesome.com/e1eaef53f0.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -17,22 +17,22 @@
 <!-----------Nav bar---------->
 <div>
     <ul>
-        <li style="float:right"><a href=""><i class="fas fa-sign-out-alt"></i> Sign Out</a></li>
-        <li style="float:right"><a href=""><i class="fas fa-address-book"></i> Contact Us</a></li>
-        <li style="float:right"><a href=""><i class="fas fa-hands-helping"></i> Help</a></li>
-        <li style="float:right"><a href=""><i class="fas fa-users"></i> About Us</a></li>
+        <li style="float:right"><a href="../index.jsp"><i class="fas fa-sign-out-alt"></i> Sign Out</a></li>
+        <li style="float:right"><a href="../contactus.jsp"><i class="fas fa-address-book"></i> Contact Us</a></li>
+        <li style="float:right"><a href="../help.jsp"><i class="fas fa-hands-helping"></i> Help</a></li>
+        <li style="float:right"><a href="../aboutus.jsp"><i class="fas fa-users"></i> About Us</a></li>
         <li style="float:right"><a href="studenthome.jsp"><i class="fas fa-home"></i> Home</a></li>
     </ul>
 </div>
-<img src="../img/avatar.png" alt="Avatar" class="avatar">
+<a href="./studentaccountsettings.jsp"><img src="../img/avatar.png" alt="Avatar" class="avatar"></a>
 
-<h1 align="Center" style="padding:25px; font-family: Trebuchet MS;">Enroll in New Class</h1>
+<h1 style="padding:25px; font-family: Trebuchet MS; text-align: center;">Enroll in New Class</h1>
 
 
 <!----------4 Dropdowns------------>
 <br />
 <center>
-    <form action="#">
+    <form action="#" style="font-family:Trebuchet MS;">
 
         <select name="cars" id="cars">
             <option value="year">Year</option>
@@ -75,7 +75,7 @@
 
     <!------------teachers' list------------->
 
-    <table border=1 width="80%" cellpadding="10px" border="1" style="border-collapse: collapse; ">
+    <table border=1 width="80%" cellpadding="10px" border="1" style="border-collapse: collapse; font-family:Trebuchet MS;">
         <thead>
         <tr>
             <th>Select</th>
@@ -98,17 +98,21 @@
         </tr>
         </tbody>
     </table>
-
     <p><i>Note: An admission fee of 1000 LKR has to be paid along with the relevant class fee</I></p>
 </center>
-
+<div class="checkfee">
+    <button style="width:190px; margin-left:580px; margin-top: 25px; margin-bottom: 25px;">Check Fees</button>
+    <br /><br /><br /><br />
+    <p style="font-size: 18px;font-family:Trebuchet MS;margin-left:570px; margin-top: 50px; color: red;">Total due amount = Rs. 2500</p>
+</div>
 <!----------upload deposit slip------------>
 <div style="padding-left:5%; font-family:Trebuchet MS;">
     <form action="x" method="post" enctype="multipart/form-data">
-        <p>Please upload the payment slip for the selected classes </p>
+        <p style="font-size: 18px;font-family:Trebuchet MS;">Please upload the payment slip for the selected classes </p>
         <input type="file" name="uploadslip" id="uploadslip">
         <br /><br />
         <input type="submit" value="Enroll now" name="submit" style= "width: 15%;">
+        <br /><br /><br /><br />
     </form>
 </div>
 

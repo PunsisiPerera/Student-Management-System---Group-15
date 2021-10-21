@@ -65,7 +65,7 @@ li a:hover:not(.active) {
 
 
 /*buttons*/
-button, input[type=submit]{
+button, input[type=submit], input[type=reset]{
     width:25%;
     height: 50px;
     float: left;
@@ -180,3 +180,14 @@ select{
     width: 15%;
 }
 
+.checkfee p{
+    font-family:Trebuchet MS;
+    text-align:center;
+    font-size: 18px;
+}
+
+.checkfee button{
+    width:0px;
+    margin-left:300px ;
+    margin-top: 20px;
+}

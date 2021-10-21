@@ -36,17 +36,17 @@
         <div class="main_nav">
             <ul>
 
-                <li style="float:right"><a href=""><i class="fas fa-sign-out-alt"></i> Sign Out</a></li>
-                <li style="float:right"><a href=""><i class="fas fa-address-book"></i> Contact Us</a></li>
-                <li style="float:right"><a href=""><i class="fas fa-hands-helping"></i> Help</a></li>
-                <li style="float:right"><a href=""><i class="fas fa-users"></i> About Us</a></li>
-                <li style="float:right"><a href=""><i class="fas fa-home"></i> Home</a></li>
+                <li style="float:right"><a href="../index.jsp"><i class="fas fa-sign-out-alt"></i> Sign Out</a></li>
+                <li style="float:right"><a href="../contactus.jsp"><i class="fas fa-address-book"></i> Contact Us</a></li>
+                <li style="float:right"><a href="../help.jsp"><i class="fas fa-hands-helping"></i> Help</a></li>
+                <li style="float:right"><a href="../aboutus.jsp"><i class="fas fa-users"></i> About Us</a></li>
+                <li style="float:right"><a href="studenthome.jsp"><i class="fas fa-home"></i> Home</a></li>
             </ul>
         </div>
     </div>
 </div>
 
-<img src="../img/avatar.png" alt="Avatar" class="avatar" style="padding:0px;">
+<a href="studentaccountsettings.jsp"><img src="../img/avatar.png" alt="Avatar" class="avatar" style="padding:0px;"></a>
 
 <div class="main">
     <h2>Student Dashboard</h2>
