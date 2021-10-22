@@ -1,7 +1,7 @@
 package com.group15.sms.studentmanagementsystembe.model;
 
 public class OfficeAdmin {
-//    private String staffID;
+    private int staffID;
     private String f_name;
     private String l_name;
     private String address;
@@ -9,16 +9,31 @@ public class OfficeAdmin {
     private String email;
     private String password;
     private String position;
-    private String date_joined;
+   // private String date_joined;
     private String security;
 
-//    public String getStaffID() {
-//        return staffID;
-//    }
-//
-//    public void setStaffID(String staffID) {
-//        this.staffID = staffID;
-//    }
+    public OfficeAdmin() {
+    }
+
+    public OfficeAdmin(int staffID, String f_name, String l_name, String address, String contact_no, String email, String password, String position, String security) {
+        this.staffID = staffID;
+        this.f_name = f_name;
+        this.l_name = l_name;
+        this.address = address;
+        this.contact_no = contact_no;
+        this.email = email;
+        this.password = password;
+        this.position = position;
+        this.security = security;
+    }
+
+    public int getStaffID() {
+        return staffID;
+    }
+
+    public void setStaffID(int staffID) {
+        this.staffID = staffID;
+    }
 
     public String getF_name() {
         return f_name;
@@ -76,13 +91,13 @@ public class OfficeAdmin {
         this.position = position;
     }
 
-    public String getDate_joined() {
-        return date_joined;
-    }
-
-    public void setDate_joined(String date_joined) {
-        this.date_joined = date_joined;
-    }
+//    public String getDate_joined() {
+//        return date_joined;
+//    }
+//
+//    public void setDate_joined(String date_joined) {
+//        this.date_joined = date_joined;
+//    }
 
     public String getSecurity() {
         return security;

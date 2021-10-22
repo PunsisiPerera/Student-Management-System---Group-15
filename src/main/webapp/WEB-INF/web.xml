@@ -30,4 +30,13 @@
         <servlet-name>ViewStudentServlet</servlet-name>
         <url-pattern>/ViewStudentServlet</url-pattern>
     </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ViewEmployeeServlet</servlet-name>
+        <servlet-class>com.group15.sms.studentmanagementsystembe.controller.ViewEmployeeServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ViewEmployeeServlet</servlet-name>
+        <url-pattern>/ViewEmployeeServlet</url-pattern>
+    </servlet-mapping>
 </web-app>

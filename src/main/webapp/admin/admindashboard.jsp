@@ -65,7 +65,7 @@
 			<div class="al6">
 				<div class="card">
 					<div class="container">
-						<h2><a href="#">Manage Time Table</a></h2> 
+						<h2><a href="${pageContext.request.contextPath}/ViewEmployeeServlet">View Employees</a></h2>
 					</div>
 				</div>
 			</div>
