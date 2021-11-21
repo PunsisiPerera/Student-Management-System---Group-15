@@ -81,13 +81,13 @@
         <div class="hdiv" style="margin-top:-80px;">
 
 
-            <form method="post">
+            <form name="myForm" action="/action_page.jsp" onsubmit="return validateForm()" method="post">
                 <br /><br /><br /><br /><br>
                 <h1>Create Assignments</h1>
 
                 <textarea id="Assignment" name="Assignment" rows="10" cols="50" placeholder="Write the Assignment here..."></textarea>
                 <br>
-                <p id=textdecors id=removepadding>Add images here:</p>
+                <p id=textdecors >Add images here:</p>
                 <label for="name"></label><input type="file"/><br><br>
 
                 <input type="submit" name="submitbutton4" value="Upload Assignment"><br>
@@ -114,6 +114,13 @@
                         dropdownContent.style.display = "block";
                     }
                 });
+            }
+            function validateForm() {
+                let x = document.forms["myForm"]["Assignment"].value;
+                if (x == "") {
+                    alert("Details must be filled out");
+                    return false;
+                }
             }
         </script>
 

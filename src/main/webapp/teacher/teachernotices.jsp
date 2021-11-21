@@ -74,9 +74,13 @@
                 <a href="./viewnotice.jsp"><i class="fas fa-chevron-right"></i> View Notices</a>
 
             </div>
-        </div>
 
+        </div>
     </div>
+
+
+
+    
     <script>
         /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content -
         This allows the user to have multiple dropdowns without any conflict */

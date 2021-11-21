@@ -16,6 +16,30 @@
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <style>
+        #tableveiw {
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 200%;
+        }
+
+        #tableveiw td, #tableveiw th {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+
+        #tableveiw tr:nth-child(even){background-color: #f2f2f2;}
+
+        #tableveiw tr:hover {background-color: #ddd;}
+
+        #tableveiw th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color: #04AA6D;
+            color: white;
+        }
+    </style>
 </head>
 <body>
 
@@ -76,7 +100,7 @@
             </div>
             <div class="tab">
                 <h2>Notices</h2>
-                <table border="1">
+                <table id="tableveiw">
                     <thead>
                     <tr>
                         <th>Notice Number</th>
@@ -87,9 +111,9 @@
 
                     <tbody>
                     <tr>
-                        <td align="center">test1</td>
-                        <td align="center">test1</td>
-                        <td align="center">test1</td>
+                        <td>test1</td>
+                        <td>test1</td>
+                        <td>test1</td>
 
                     </tr>
                     </tbody>
