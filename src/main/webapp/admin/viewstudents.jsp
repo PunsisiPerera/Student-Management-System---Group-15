@@ -10,7 +10,7 @@
 <html>
 <head>
     <title>Student List | Admin </title>
-    <link rel="stylesheet" href="../css/viewstudents.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/viewstudents.css">
     <script src="https://kit.fontawesome.com/e1eaef53f0.js" crossorigin="anonymous"></script>
 </head>
 <body>

@@ -26,8 +26,6 @@
 
 </div>
 
-<a href="./ofiiceadminaccountsettings.jsp"><img src="../img/avatar.png" alt="Avatar" class="avatar" style="padding:0px;"></a>
-
 <div class="hdiv">
 
     <form action="${pageContext.request.contextPath}/StudentRegisterServlet" method="post" >

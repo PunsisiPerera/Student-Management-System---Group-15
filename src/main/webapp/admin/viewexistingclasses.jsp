@@ -3,7 +3,7 @@
 <head>
 <title>View Existing Classes | Admin</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="../css/viewexistingclasses.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/css/viewexistingclasses.css">
 <script src="https://kit.fontawesome.com/e1eaef53f0.js" crossorigin="anonymous"></script>
 </head>
 <body>

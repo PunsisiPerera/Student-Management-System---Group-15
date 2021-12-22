@@ -24,6 +24,8 @@ public class InquiryServlet extends HttpServlet {
         }catch (ClassNotFoundException | SQLException e){
             e.printStackTrace();
         }
+
+
     }
 
     @Override

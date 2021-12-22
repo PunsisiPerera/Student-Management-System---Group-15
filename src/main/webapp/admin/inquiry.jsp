@@ -10,8 +10,8 @@
 <html>
 <head>
     <title>Manage Inquiries | Admin </title>
-    <link rel="stylesheet" href="../css/viewteachers.css">
-    <script src="https://kit.fontawesome.com/e1eaef53f0.js" crossorigin="anonymous"></script>
+    <link href="${pageContext.request.contextPath}/css/viewteachers.css" rel="stylesheet" >
+<%--    <script src="https://kit.fontawesome.com/e1eaef53f0.js" crossorigin="anonymous"></script>--%>
 </head>
 <body>
 <!-----------Nav bar---------->
@@ -28,7 +28,7 @@
 
 <div class="tab">
     <h1>Inquiries</h1>
-    <table  border="1">
+    <table >
         <thead>
         <tr>
             <th>Inquiry ID</th>
