@@ -41,7 +41,7 @@ public class StudentRegisterServlet extends HttpServlet {
         StudentRegisterDao studentRegisterDao = new StudentRegisterDao();
         try {
             studentRegisterDao.registerStudent(student);
-            response.sendRedirect("studentRegistration.jsp");
+            response.sendRedirect("officeAdmin/studentRegistration.jsp");
         } catch (ClassNotFoundException | SQLException e) {
             e.printStackTrace();
         }
