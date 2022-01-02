@@ -10,7 +10,8 @@
 <head>
     <title> Enroll in Class | Student </title>
     <link rel="stylesheet" href="../css/studentHome.css">
-    <script src="https://kit.fontawesome.com/e1eaef53f0.js" crossorigin="anonymous"></script>
+
+
 </head>
 <body>
 
@@ -32,30 +33,30 @@
 <!----------4 Dropdowns------------>
 <br />
 <center>
-    <form action="#" style="font-family:Trebuchet MS;">
+    <form name="enroll" action="#" style="font-family:Trebuchet MS;" onsubmit="return validateForm()" method="post">
 
-        <select name="cars" id="cars">
-            <option value="year">Year</option>
-            <option value="saab">2022</option>
-            <option value="opel">2023</option>
-            <option value="audi">2024</option>
+        <select name="Year" id="Year">
+            <option value="0">Year</option>
+            <option value="2022">2022</option>
+            <option value="2023">2023</option>
+            <option value="2024">2024</option>
         </select>
 
-        <select name="cars" id="cars">
+        <select name="Subject" id="Subject">
             <option value="subject">Subject</option>
             <option value="saab">Combined Maths</option>
             <option value="opel">Physics</option>
             <option value="audi">Chemistry</option>
         </select>
         <br /><br />
-        <select name="cars" id="cars">
+        <select name="Stream" id="Stream">
             <option value="stream">Stream</option>
             <option value="saab">Physical Science</option>
             <option value="opel">Commerce</option>
             <option value="audi">Other</option>
         </select>
 
-        <select name="cars" id="cars">
+        <select name="Medium" id="Medium">
             <option value="medium">Medium</option>
             <option value="saab">Sinhala</option>
             <option value="opel">English</option>
@@ -63,13 +64,14 @@
 
         <br /><br /><br />
 
-        </div>
 
-        <div class="f4">
+
+
             <input type="submit" value="Submit" >
-    </form>
+    </form>\
 
-    </div>
+
+
     <br /><br /><br /><br /><br /><br />
 
 
@@ -114,7 +116,19 @@
         <input type="submit" value="Enroll now" name="submit" style= "width: 15%;">
         <br /><br /><br /><br />
     </form>
+
+
 </div>
+<script>
+    function validateForm() {
+        let x = document.forms["enroll"]["Year"].value;
+        if (x == "0") {
+            alert("Select a Year");
+            return false;
+        }
+
+    }
+</script>
 
 </body>
 </html>
