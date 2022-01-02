@@ -28,7 +28,7 @@
   <div class="hdiv">
       <h1>Sign In</h1>
       <p>Welcome Back!<br /><br /><br /><p>
-      <form action="LoginServlet" method="post">
+      <form name="Login" action="LoginServlet"onsubmit="return validateForm()" method="post">
       <section class="rtop">Signing in as:</section> <br /><br />
       <select name="type" id="userrole">
           <option value="admin">Admin</option>
@@ -48,6 +48,20 @@
           <a href="resetpassword.jsp">Forgot Password?</a> <br /><br />
       </center>
       </p>
+      <script>
+          function validateForm() {
+              let x = document.forms["Login"]["email"].value;
+              if (x == "") {
+                  alert("Enter email address");
+                  return false;
+              }
+              let y = document.forms["Login"]["pass"].value;
+              if (y == "") {
+                  alert("Enter password");
+                  return false;
+              }
+          }
+      </script>
   </div>
   </body>
 </html>

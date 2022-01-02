@@ -26,19 +26,21 @@
         <div class="hdiv">
             <h1 align="center" class=removepadding>Manage General Notices</h1>
 	    <p class=removepadding>Welcome!<br /><br /><br /><p>
-            
-        <form method="post">
+
+            <form name="myForm" action="${pageContext.request.contextPath}/StudentRegisterServlet" onsubmit="return validateForm()"method="post" >
               <br /><br /><br /><br /><br>
               <h1>Manage General Notices</h1> 
               
-            <textarea class="notice" name="notice" rows="10" cols="50" placeholder="Write the notice here..."></textarea>
+            <textarea class="notice" name="notice" id="notce" rows="10" cols="50" placeholder="Write the notice here..."></textarea>
             <br>
             <p class=textdecors class=removepadding>Add images here:</p>
             <label for="name"></label><input type="file"/><br><br>
             
              <input type="submit" name="submitbutton4" value="Upload and view the notice"><br>
              <input type="reset" name="resetbutton4" value="Reset">
-          
+
+
+
         </div>
  
       </form>

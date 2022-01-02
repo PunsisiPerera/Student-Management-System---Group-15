@@ -29,7 +29,7 @@
 
 <div class="hdiv">
 
-    <form action="${pageContext.request.contextPath}/StudentRegisterServlet" method="post" >
+    <form name="myForm" action="${pageContext.request.contextPath}/StudentRegisterServlet" onsubmit="return validateForm()"method="post" >
        
         <h1>Student Registration Form</h1><br><br>
         <p class=textdecors class=removepadding>Student ID</p>
@@ -60,7 +60,17 @@
         <input type="submit" name="submitbutton4" value="Sign Up"><br><br><br><br><br><br>
     </form>
 
-</div>
+    <script>
+        function validateForm() {
+            let x = document.forms["myForm"]["id"].value;
+            if (x == "") {
+                alert("id details must be filled out");
+                return false;
+            }
+        }
+
+    </script>
+        </div>
 
 
 
