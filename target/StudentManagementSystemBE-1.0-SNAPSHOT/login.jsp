@@ -55,7 +55,7 @@
                   return false;
               }
               let y = document.forms["Login"]["pass"].value;
-              if (x == "") {
+              if (y == "") {
                   alert("Enter password");
                   return false;
               }
