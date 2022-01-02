@@ -3,7 +3,7 @@
 <html>
 <head>
 <title>Teacher Registration Form | Admin</title>
-<link rel="stylesheet" href="../css/teacherregistration.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/css/teacherregistration.css">
 <script src="https://kit.fontawesome.com/e1eaef53f0.js" crossorigin="anonymous"></script>
 </head>
     <body>

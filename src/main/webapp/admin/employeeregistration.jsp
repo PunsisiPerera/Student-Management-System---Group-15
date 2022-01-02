@@ -2,7 +2,7 @@
 <html>
 <head>
 <title>Employee Registration Form | Admin</title>
-<link rel="stylesheet" href="../css/employeeregistration.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/css/employeeregistration.css">
 <script src="https://kit.fontawesome.com/e1eaef53f0.js" crossorigin="anonymous"></script>
 </head>
     <body>
