@@ -99,7 +99,12 @@
 
             </div>
             <div class="tab">
-                <h2>Assignment Marks</h2>
+                <h2>Upload Assignment Marks</h2>
+                <form>action="UploadFile" method="post" enctype="multipart/form-data">
+                    Select File : <input type="file" name="filetoupload">
+                    <br/>
+                    <input type="submit" value="Upload File">
+                </form>
                 <table id="tableveiw">
                     <thead>
                     <tr>

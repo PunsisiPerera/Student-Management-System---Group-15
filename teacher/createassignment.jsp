@@ -87,8 +87,8 @@
 
                 <textarea id="Assignment" name="Assignment" rows="10" cols="50" placeholder="Write the Assignment here..."></textarea>
                 <br>
-                <p id=textdecors >Add images here:</p>
-                <label for="name"></label><input type="file"/><br><br>
+                <p id=textdecors >Add files here:</p>
+                <label for="Assignment"></label><input type="file"/><br><br>
 
                 <input type="submit" name="submitbutton4" value="Upload Assignment"><br>
                 <input type="reset" name="resetbutton4" value="Reset">
