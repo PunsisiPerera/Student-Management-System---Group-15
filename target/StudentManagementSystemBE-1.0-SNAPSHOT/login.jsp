@@ -16,37 +16,52 @@
   <!-----------Nav bar---------->
   <div>
       <ul>
-          <li style="float:right"><a href="./contactus.html"><i class="fas fa-address-book"></i> Contact Us</a></li>
-          <li style="float:right"><a href="./help.html"><i class="fas fa-hands-helping"></i> Help</a></li>
-          <li style="float:right"><a href="./aboutus.html"><i class="fas fa-users"></i> About Us</a></li>
-          <li style="float:right"><a href=""><i class="fas fa-edit"></i> Sign Up</a></li>
-          <li style="float:right"><a href="./index.html"><i class="fas fa-home"></i> Home</a></li>
+          <li style="float:right"><a href="contactus.jsp"><i class="fas fa-address-book"></i> Contact Us</a></li>
+          <li style="float:right"><a href="help.jsp"><i class="fas fa-hands-helping"></i> Help</a></li>
+          <li style="float:right"><a href="aboutus.jsp"><i class="fas fa-users"></i> About Us</a></li>
+          <li style="float:right"><a href="index.jsp"><i class="fas fa-home"></i> Home</a></li>
       </ul>
   </div>
 
   <!---------card---------->
   <div class="hdiv">
-      <h1 align="center" id=removepadding>Sign In</h1>
-      <p id=removepadding1>Welcome Back!<br /><br /><br /><p>
-      <form action="LoginServlet" method="post">
-          <p id=textdecors1 id=removepadding2>Email:</p>
+      <h1>Sign In</h1>
+      <p>Welcome Back!<br /><br /><br /><p>
+      <form name="Login" action="LoginServlet" onsubmit="return validateForm()" method="post">
+      <section class="rtop">Signing in as:</section> <br /><br />
+      <select name="type" id="userrole">
+          <option value="admin">Admin</option>
+          <option value="staff">Staff</option>
+          <option value="teacher">Teacher</option>
+          <option value="student">Student</option>
+      </select>
+          <section class="additional"><p class=textdecors class=removepadding>Email:</p></section>
           <input type="text" id="email" name="email" placeholder="Enter your email address">
           <br />
-          <p id=textdecors2 id=removepadding3>Password:</p>
+          <section class="additional"><p class=textdecors class=removepadding>Password:</p></section>
           <input type="password" id="pass" name="pass" placeholder="Enter the password">
-      <select name="type" id="cars">
-          <option > admin </option>
-          <option  >staff</option>
-          <option >teacher</option>
-          <option >student</option>
-      </select>
 
       <input type="submit" name="submitbutton4" value="Sign In">
       </form>
       <center>
-          <a href="./resetpassword.html">Forgot Password?</a> <br /><br />
+          <a href="resetpassword.jsp">Forgot Password?</a> <br /><br />
       </center>
       </p>
+      <script>
+          function validateForm() {
+              let x = document.forms["Login"]["email"].value;
+              if (x == "") {
+                  alert("Enter email address");
+                  return false;
+              }
+              let y = document.forms["Login"]["pass"].value;
+              if (x == "") {
+                  alert("Enter password");
+                  return false;
+              }
+          }
+      </script>
+
   </div>
   </body>
 </html>
