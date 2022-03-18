@@ -19,6 +19,7 @@
           <li style="float:right"><a href="contactus.jsp"><i class="fas fa-address-book"></i> Contact Us</a></li>
           <li style="float:right"><a href="help.jsp"><i class="fas fa-hands-helping"></i> Help</a></li>
           <li style="float:right"><a href="aboutus.jsp"><i class="fas fa-users"></i> About Us</a></li>
+          <li style="float:right"><a href=""><i class="fas fa-edit"></i> Sign Up</a></li>
           <li style="float:right"><a href="index.jsp"><i class="fas fa-home"></i> Home</a></li>
       </ul>
   </div>
@@ -27,7 +28,7 @@
   <div class="hdiv">
       <h1>Sign In</h1>
       <p>Welcome Back!<br /><br /><br /><p>
-      <form action="LoginServlet" method="post">
+      <form name="Login" action="LoginServlet"onsubmit="return validateForm()" method="post">
       <section class="rtop">Signing in as:</section> <br /><br />
       <select name="type" id="userrole">
           <option value="admin">Admin</option>
@@ -47,6 +48,20 @@
           <a href="resetpassword.jsp">Forgot Password?</a> <br /><br />
       </center>
       </p>
+      <script>
+          function validateForm() {
+              let x = document.forms["Login"]["email"].value;
+              if (x == "") {
+                  alert("Enter email address");
+                  return false;
+              }
+              let y = document.forms["Login"]["pass"].value;
+              if (y == "") {
+                  alert("Enter password");
+                  return false;
+              }
+          }
+      </script>
   </div>
   </body>
 </html>

@@ -80,6 +80,23 @@ public class LoginDao {
         }
         return state;
 
-    }
+        //validate reset password
+        public boolean validateStudent(LoginModel loginModel) throws ClassNotFoundException, SQLException {
+            boolean state = false;
+
+            Class.forName("com.mysql.jdbc.Driver");
+            Connection connection = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/student_management_system","root","");
+            PreparedStatement preparedStatement = connection.prepareStatement("select * from student where email=? and password=?");
+            {
+                preparedStatement.setString(1,loginModel.getEmail());
+                preparedStatement.setString(2,loginModel.getPassword();
+
+                System.out.println(preparedStatement);
+                ResultSet resultSet = preparedStatement.executeQuery();
+                state = resultSet.next();
+            }
+            return state;
+
+        }
 
 }

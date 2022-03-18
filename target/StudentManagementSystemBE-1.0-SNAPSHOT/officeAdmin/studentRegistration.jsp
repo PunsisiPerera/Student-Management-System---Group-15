@@ -26,6 +26,7 @@
 
 </div>
 
+
 <div class="hdiv">
 
     <form name="myForm" action="${pageContext.request.contextPath}/StudentRegisterServlet" onsubmit="return validateForm()"method="post" >
@@ -59,25 +60,17 @@
         <input type="submit" name="submitbutton4" value="Sign Up"><br><br><br><br><br><br>
     </form>
 
-    <script type="text/javascript">
-        {function validateForm()
-
-            var x=document.forms["myForm"]["id"].value;
-            if (x==null || x=="")
-            {
-                alert("id must be filled out");
+    <script>
+        function validateForm() {
+            let x = document.forms["myForm"]["id"].value;
+            if (x == "") {
+                alert("id details must be filled out");
                 return false;
             }
+        }
 
-            var y=document.forms["myForm"]["qr"].value;
-            {
-                if (y==null || y=="")
-                    alert("qr name must be filled out");
-                return false;
-            }
     </script>
-
-</div>
+        </div>
 
 
 

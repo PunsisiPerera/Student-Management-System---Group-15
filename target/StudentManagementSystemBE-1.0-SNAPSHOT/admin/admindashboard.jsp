@@ -10,11 +10,11 @@
 <div>
 		<ul>
 			
-					<li style="float:right"><a href="../index.jsp"><i class="fas fa-sign-out-alt"></i> Sign Out</a></li>
-					<li style="float:right"><a href="../contactus.jsp"><i class="fas fa-address-book"></i> Contact Us</a></li>
-					<li style="float:right"><a href="../help.jsp"><i class="fas fa-hands-helping"></i> Help</a></li>
-					<li style="float:right"><a href="../aboutus.jsp"><i class="fas fa-users"></i> About Us</a></li>
-					<li style="float:right"><a href="./admindashboard.jsp" class="active" ><i class="fas fa-columns"></i> Dashboard</a></li>
+					<li style="float:right"><a href="../index.html"><i class="fas fa-sign-out-alt"></i> Sign Out</a></li>   			
+					<li style="float:right"><a href="./contactus.html"><i class="fas fa-address-book"></i> Contact Us</a></li>
+					<li style="float:right"><a href="./help.html"><i class="fas fa-hands-helping"></i> Help</a></li>
+					<li style="float:right"><a href="./aboutus.html"><i class="fas fa-users"></i> About Us</a></li>
+					<li style="float:right"><a href="../home.html" class="active" ><i class="fas fa-columns"></i> Dashboard</a></li>
 		</ul>
 </div>
 
@@ -25,7 +25,7 @@
 			<div class="al1">
 				<div class="card">
 					<div class="container">
-						<h2><a href="./teacherregistration.jsp">Add Teachers</a></h2>
+						<h2><a href="#">Add Teachers</a></h2> 
 					</div>
 				</div>
 			</div>
@@ -33,7 +33,7 @@
 			<div class="al2">
 				<div class="card">
 					<div class="container">
-						<h2><a href="./employeeregistration.jsp">Add Employees</a></h2>
+						<h2><a href="#">Add Employees</a></h2> 
 					</div>
 				</div>
 			</div>
@@ -41,7 +41,7 @@
 			<div class="al3">
 				<div class="card">
 					<div class="container">
-						<h2><a href="${pageContext.request.contextPath}/ViewTeachersServlet">View Teacher List</a></h2>
+						<h2><a href="#">View Teacher List</a></h2> 
 					</div>
 				</div>
 			</div>
@@ -49,7 +49,7 @@
 			<div class="al4">
 				<div class="card">
 					<div class="container">
-						<h2><a href="./viewexistingclasses.jsp">Manage Subjects + Classes</a></h2>
+						<h2><a href="#">Manage Subjects + Classes</a></h2> 
 					</div>
 				</div>
 			</div>
@@ -57,7 +57,7 @@
 			<div class="al5">
 				<div class="card">
 					<div class="container">
-						<h2><a href="${pageContext.request.contextPath}/ViewStudentServlet">View Student List</a></h2>
+						<h2><a href="#">View Student List</a></h2> 
 					</div>
 				</div>
 			</div>
@@ -65,7 +65,7 @@
 			<div class="al6">
 				<div class="card">
 					<div class="container">
-						<h2><a href="${pageContext.request.contextPath}/ViewEmployeeServlet">View Employees</a></h2>
+						<h2><a href="#">Manage Time Table</a></h2> 
 					</div>
 				</div>
 			</div>
@@ -73,7 +73,7 @@
 			<div class="al7">
 				<div class="card">
 					<div class="container">
-						<h2><a href="${pageContext.request.contextPath}/InquiryServlet">Manage Inquiries</a></h2>
+						<h2><a href="#">Manage Inquiries</a></h2> 
 					</div>
 				</div>
 			</div>

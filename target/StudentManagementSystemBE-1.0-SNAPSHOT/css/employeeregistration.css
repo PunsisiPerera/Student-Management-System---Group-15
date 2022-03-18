@@ -71,7 +71,7 @@ input[type=submit]{
 
 
 input[type=submit]:hover {
-  background-color: #FFC300;
+  background-color: #adadad;
 }
 
 /*additional formattings*/
@@ -109,6 +109,7 @@ ul {
 
 li {
   float: left;
+  border-right:1px solid #bbb;
 }
 
 li:last-child {

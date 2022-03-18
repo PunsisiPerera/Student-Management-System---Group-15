@@ -20,11 +20,11 @@
 
 <div class="hdiv">
     <img src="./img/dashboard.jpg" align="left" width=55% height=100%>
-    <br /><br /><br /><br /><br />
     <h1 align="center"><br />Student Management System <br /> Pragathi Higher Education Institute<br /> Kandy, Sri Lanka</h1>
     <br /><br /><br />
     <button type="button" onclick="window.location.href='login.jsp'">Sign In</button>
     <br /><br />
+    <button type="button" onclick="window.location.href='./officeadmin/registrationform.html'"> Sign Up as a Student</button>
 </div>
 
 </body>

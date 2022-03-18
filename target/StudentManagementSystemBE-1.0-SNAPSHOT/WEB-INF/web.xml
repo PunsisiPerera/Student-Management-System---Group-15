@@ -3,40 +3,4 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
-
-    <servlet>
-        <servlet-name>InquiryServlet</servlet-name>
-        <servlet-class>com.group15.sms.studentmanagementsystembe.controller.InquiryServlet</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>InquiryServlet</servlet-name>
-        <url-pattern>/InquiryServlet</url-pattern>
-    </servlet-mapping>
-
-    <servlet>
-        <servlet-name>ViewTeachersServlet</servlet-name>
-        <servlet-class>com.group15.sms.studentmanagementsystembe.controller.ViewTeachersServlet</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>ViewTeachersServlet</servlet-name>
-        <url-pattern>/ViewTeachersServlet</url-pattern>
-    </servlet-mapping>
-
-    <servlet>
-        <servlet-name>ViewStudentServlet</servlet-name>
-        <servlet-class>com.group15.sms.studentmanagementsystembe.controller.ViewStudentServlet</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>ViewStudentServlet</servlet-name>
-        <url-pattern>/ViewStudentServlet</url-pattern>
-    </servlet-mapping>
-
-    <servlet>
-        <servlet-name>ViewEmployeeServlet</servlet-name>
-        <servlet-class>com.group15.sms.studentmanagementsystembe.controller.ViewEmployeeServlet</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>ViewEmployeeServlet</servlet-name>
-        <url-pattern>/ViewEmployeeServlet</url-pattern>
-    </servlet-mapping>
 </web-app>
