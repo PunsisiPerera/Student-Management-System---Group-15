@@ -28,6 +28,15 @@ public class Student {
         this.security = security;
     }
 
+    public Student(String studentID, String f_name, String l_name, String address, String email, String contact_no) {
+        this.studentID = studentID;
+        this.f_name = f_name;
+        this.l_name = l_name;
+        this.address = address;
+        this.email = email;
+        this.contact_no = contact_no;
+    }
+
     public String getConfPassword() {
         return confPassword;
     }

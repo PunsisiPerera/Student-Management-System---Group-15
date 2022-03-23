@@ -1,3 +1,4 @@
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -27,7 +28,8 @@
               <h1>Mark Attendance</h1>    
         
         <p class=textdecors class=removepadding>Select the class:</p>
-	
+
+
         <select name="classes" class="classes">
             <option value="Bio2023">Bio2023</option>
             <option value="Maths2023">Maths2023</option>
@@ -36,10 +38,27 @@
         </select>
         <br><br>
             <p class=textdecors class=removepadding>Enter Student ID Number:</p>
-	    <input type="text" class="studentnumber" name="stno" placeholder="Enter the student number here"><br><br>
-	<input type="submit" name="submitbutton5" value="Search"><br><br>
-	
-	<textarea rows=20 cols=50></textarea><br><br><br>
+            <form method="get" action="${pageContext.request.contextPath}/StudentSearchServlet">
+
+                <input type="text" class="studentnumber" name="stdId" placeholder="Enter the student number hereeeeee"><br><br>
+                <input type="submit" name="submitbutton5" value="Searchhhhh"><br><br>
+            </form>
+
+
+            <table>
+                <c:forEach items="${stdId}" var="stdId">
+                    <tr>
+                        <td>
+                            <c:out value="${student.studentID}" />
+                        </td>
+
+                        <td>${stdId.f_name}</td>
+                        <td>${stdId.l_name}</td>
+                        <td>${stdId.email}</td>
+                    </tr>
+                </c:forEach>
+
+            </table>
 
 
             <input type="submit" name="submitbutton4" value="Mark Attendance"><br><br>

@@ -1,10 +1,4 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: punsisi_p
-  Date: 10/20/2021
-  Time: 11:45 AM
-  To change this template use File | Settings | File Templates.
---%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -31,7 +25,7 @@
 <div class="hdiv">
 
     <form action="${pageContext.request.contextPath}/StudentRegisterServlet" method="post" >
-       
+
         <h1>Student Registration Form</h1><br><br>
         <p class=textdecors class=removepadding>Student ID</p>
         <input type="text" class="name" name="id" placeholder="Enter ID">
