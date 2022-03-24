@@ -96,15 +96,11 @@
             <div class="dropdown-container">
                 <a href="./createassignment.jsp"><i class="fas fa-chevron-right"></i> Create Assignments</a>
                 <a href="./viewassignmentmarks.jsp"><i class="fas fa-chevron-right"></i> View Assignments Marks</a>
-
+                <a href="./uploadassignmentmarks.jsp"><i class="fas fa-chevron-right"></i> Upload Assignments Marks</a>
             </div>
             <div class="tab">
-                <h2>Upload Assignment Marks</h2>
-                <form>action="UploadFile" method="post" enctype="multipart/form-data">
-                    Select File : <input type="file" name="filetoupload">
-                    <br/>
-                    <input type="submit" value="Upload File">
-                </form>
+                <h2>Assignment Marks</h2>
+
                 <table id="tableveiw">
                     <thead>
                     <tr>

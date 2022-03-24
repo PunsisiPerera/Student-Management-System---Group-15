@@ -72,7 +72,7 @@
             <div class="dropdown-container">
                 <a href="./createassignment.jsp"><i class="fas fa-chevron-right"></i> Create Assignments</a>
                 <a href="./viewassignmentmarks.jsp"><i class="fas fa-chevron-right"></i> View Assignments Marks</a>
-
+                <a href="./uploadmarks.jsp"><i class="fas fa-chevron-right"></i> Upload Assignments Marks</a>
             </div>
         </div>
 
