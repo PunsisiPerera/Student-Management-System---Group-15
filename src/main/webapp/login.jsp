@@ -42,10 +42,10 @@
           <input type="password" id="pass" name="pass" placeholder="Enter the password">
 
       <input type="submit" name="submitbutton4" value="Sign In">
-      </form>
-      <center>
+
           <a href="resetpassword.jsp">Forgot Password?</a> <br /><br />
-      </center>
+
+  </form>
       </p>
       <script>
           function validateForm() {

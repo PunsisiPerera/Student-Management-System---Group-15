@@ -15,7 +15,7 @@
 	            <li style="float:right"><a href="../contactus.jsp"><i class="fas fa-address-book"></i> Contact Us</a></li>
 	            <li style="float:right"><a href="../help.jsp"><i class="fas fa-hands-helping"></i> Help</a></li>
 	            <li style="float:right"><a href="../aboutus.jsp"><i class="fas fa-users"></i> About Us</a></li>
-	            <li style="float:right"><a href="admindashboard.jsp"><i class="fas fa-columns"></i> Dashboard</a></li>
+	            <li style="float:right"><a href="./admindashboard.jsp"><i class="fas fa-columns"></i> Dashboard</a></li>
 		</ul>
 	</div>
 

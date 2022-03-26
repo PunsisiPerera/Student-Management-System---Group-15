@@ -65,7 +65,7 @@
                     <c:out value="${teacher.contact_no}" />
                 </td>
 
-                <td><a href="edit?id=<c:out value='${teacher.teacherID}' />">Edit</a> &nbsp;&nbsp;&nbsp;&nbsp; <a href="delete?id=<c:out value='${teacher.teacherID}' />">Delete</a></td>
+                <td><a href="TeacherSearchServlet?teacherID=<c:out value='${teacher.teacherID}' />">Edit</a>
             </tr>
         </c:forEach>
         <!-- } -->

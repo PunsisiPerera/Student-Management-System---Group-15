@@ -33,21 +33,12 @@
 
 <div class="right">
   <h1>Reset Password</h1>
-  <form method="post" action="#">
+  <form method="post" action="ForgotPasswordServlet">
     Enter email address:
     <br />
     <input type="text" id="email" name="email" required>
     <br /><br />
-    Enter mother's maiden name:<br />
-    <input type="text" id="security" name="security" required>
-    <br /><br />
-    Enter new password:<br />
-    <input type="password" id="password1" name="password1" required>
-    <br /><br />
-    Re-enter new password:<br />
-    <input type="password" id="password2" name="password2" required>
-    <br /><br />
-    <input type="submit" name="resetpassword" value="Submit" onclick="window.location.href='login.jsp'">
+    <input type="submit" name="resetpassword" value="Submit">
     <input type="reset" name="cancel" value="Cancel">
 
   </form>

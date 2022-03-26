@@ -18,7 +18,7 @@ public class StudentSearchServlet extends HttpServlet {
         Student selectedStudent = studentDao.searchStudent(stdId);
 
         request.setAttribute("stdId", stdId);
-        RequestDispatcher view = request.getRequestDispatcher("officeAdmin/editStudent.jsp");
+        RequestDispatcher view = request.getRequestDispatcher("admin/editStudent.jsp");
         request.setAttribute("selectedStudent",selectedStudent);
         view.forward(request,response);
 
