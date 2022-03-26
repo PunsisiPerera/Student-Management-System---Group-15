@@ -163,6 +163,7 @@ button:hover {
     background-color: #FFC300;
 }
 
+/*buttons in the table*/
 
 /*buttons in the table*/
 
@@ -212,8 +213,31 @@ button:hover {
 }
 
 
+.tab input[type=submit]:hover {
+    background-color: #FFC300;
+}
 
-   
 
+.abc{
+    margin: 20px;
+}
 
+.abc button{
+    width: 200px;
+    height: 40px;
+    background-color: #001D3D;
+    font-family:Trebuchet MS;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 20px;
+    font-size:15px;
+    cursor: pointer;
+    text-align:center;
+    display: block;
+    margin: 0 auto;
+}
 
+.abc button:hover {
+    background-color: #FFC300;
+}

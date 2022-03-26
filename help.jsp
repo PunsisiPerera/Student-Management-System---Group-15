@@ -27,7 +27,7 @@
   <h1>Need some help?</h1>
   <p>Tell us what's in your mind and we'll get back to you!</p>
 
-  <form method="post" action="InquiryServlet">
+  <form method="post" action="InquiryServlet" name="form1" onsubmit="required()">
     Enter email address:<br />
     <input type="text" class="email" name="email" required>
     <br /><br />
@@ -39,8 +39,35 @@
     <br /><br />
     <input type="hidden" name="status" value="Pending">
     <input type="hidden" name="date" value="<%= (new Date()).toString()%>">
-    <input type="submit" name="submitinquiry" value="Submit">
-    <input type="reset" name="cancelinquiry" value="Cancel">
+    <input type="submit" name="submitinquiry" value="Submit" onclick="mySubmit()">
+    <input type="reset" name="cancelinquiry" value="Cancel" onclick="myCancel()">
+
+    <script>
+      function mySubmit(){
+        confirm("Confirm submission?");
+      }
+      function myCancel(){
+        confirm("Do you want to cancel?");
+      }
+
+      function required()
+      {
+        var empt1 = document.forms["form1"]["email"].value;
+        var empt2 = document.forms["form1"]["subject"].value;
+        var empt3 = document.forms["form1"]["inquiry"].value;
+        if (empt1 == "" || empt2 == "" || empt3 == "")
+        {
+          alert("Please input a Value");
+          return false;
+        }
+        else
+        {
+          alert("Inquiry Sent");
+          return true;
+        }
+      }
+
+    </script>
   </form>
 </div>
 

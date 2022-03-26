@@ -160,7 +160,9 @@ body{
     width: 35px;
 }
 
-
+.tabx th{
+    background-color: #FFC300;
+}
 .details th,td{
     text-align: left;
     padding: 15px;
@@ -171,3 +173,71 @@ body{
     width: 30%;
     margin-left: 670px;
 }
+
+/*side nav profile styles*/
+.left {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width:200px;
+    height: 400px;
+    background-color: #FFC300;
+    border-radius:15px;
+    text-align:center;
+    margin-left:20px;
+    margin-top:60px;
+}
+
+.container {
+    padding-left: 0px;
+    padding-top: 60px;
+}
+
+.con1{
+    margin-left: -25px;
+}
+
+.left a{
+    text-decoration: none;
+    color:#fff;
+}
+
+.avatar{
+    height: 200px;
+    width: 200px;
+    margin-top: -40px;
+}
+
+.container input[type=submit]{
+    width:150px;
+    height: 40px;
+    float: left;
+    background-color: #001D3D;
+    font-family:Trebuchet MS;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size:15px;
+    cursor: pointer;
+    text-align:center;
+    display: block;
+    margin: 10px;
+    margin-left: 75px;
+}
+
+.container button{
+    width:150px;
+    height: 40px;
+    float: left;
+    background-color: #001D3D;
+    font-family:Trebuchet MS;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size:15px;
+    cursor: pointer;
+    text-align:center;
+    display: block;
+    margin: 10px;
+    margin-left: 75px;
+}
+

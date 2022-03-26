@@ -17,7 +17,15 @@
 
 <!-----------Side Nav bar---------->
 <div class="sidenav">
-    <h2>Dashboard</h2>
+    <h2 style="font-family:Trebuchet MS;">Pragathi Institute</h2>
+    <div class="left">
+        <div class="container">
+            <img src="../img/avatar.png" alt="Avatar" class="avatar">
+            <a href="./studentaccountsettings.jsp"><button style="width:175px; height: 40px; background-color: #001D3D; font-family:Trebuchet MS; color: white; border: none; border-radius: 20px; font-size:15px; text-align:center; margin: 10px; margin-left: 0px; display: block; cursor: pointer;">Edit Profile</button></a>
+            <a href="../resetpassword.jsp"><button style="width:175px; height: 40px; background-color: #001D3D; font-family:Trebuchet MS; color: white; border: none; border-radius: 20px; font-size:15px; text-align:center; margin: 10px; margin-left: 0px; display: block; cursor: pointer;">Change Password</button></a>
+        </div>
+    </div>
+    <br /><br /><br />
     <button class="dropdown-btn">Class 1
         <i class="fa fa-caret-down"></i>
     </button>
@@ -46,11 +54,10 @@
     </div>
 </div>
 
-<a href="studentaccountsettings.jsp"><img src="../img/avatar.png" alt="Avatar" class="avatar" style="padding:0px;"></a>
+<!--<a href="studentaccountsettings.jsp"><img src="../img/avatar.png" alt="Avatar" class="avatar" style="padding:0px;"></a>-->
 
 <div class="main">
     <h2>Student Dashboard</h2>
-
 </div>
 
 
@@ -73,8 +80,10 @@
     }
 </script>
 
-<!------------marks------------>
 <div class="tab">
+    <div class="tabx">
+<!------------marks------------
+
     <h2>Assignment Marks</h2>
     <table  border="1">
         <thead>
@@ -95,10 +104,11 @@
         </tr>
         </tbody>
     </table>
-    <br /><br /><br /><br />
+    <br /><br /><br /><br />>
 
     <!------------assignment details------------>
     <h2>Assignment Details</h2>
+        <input type="submit" name="submitbutton4" value="Delete">
     <table cellpadding="5px" border="1">
         <thead>
         <tr>
@@ -138,7 +148,7 @@
         </tr>
         </tbody>
     </table>
-
+    </div>
     <br /><br /><br /><br />
     <!------------Class Details------------>
     <h2>Class Details</h2>

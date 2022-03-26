@@ -14,6 +14,21 @@
 </head>
 <body>
 
+
+<!-----------Side Nav bar---------->
+<div class="sidenav">
+    <h2 style="font-family:Trebuchet MS;">Pragathi Institute</h2>
+    <div class="left">
+        <div class="container">
+            <img src="../img/avatar.png" alt="Avatar" class="avatar">
+            <a href="./studentaccountsettings.jsp"><button style="width:175px; height: 40px; background-color: #001D3D; font-family:Trebuchet MS; color: white; border: none; border-radius: 20px; font-size:15px; text-align:center; margin: 10px; margin-left: 15px; display: block; cursor: pointer;">Edit Profile</button></a>
+            <a href="../resetpassword.jsp"><button style="width:175px; height: 40px; background-color: #001D3D; font-family:Trebuchet MS; color: white; border: none; border-radius: 20px; font-size:15px; text-align:center; margin: 10px; margin-left: 15px; display: block; cursor: pointer;">Change Password</button></a>
+        </div>
+    </div>
+
+
+</div>
+
 <!-----------Nav bar---------->
 <div>
     <ul>
@@ -24,15 +39,15 @@
         <li style="float:right"><a href="studenthome.jsp"><i class="fas fa-home"></i> Home</a></li>
     </ul>
 </div>
-<a href="./studentaccountsettings.jsp"><img src="../img/avatar.png" alt="Avatar" class="avatar"></a>
+<!--<a href="./studentaccountsettings.jsp"><img src="../img/avatar.png" alt="Avatar" class="avatar"></a>-->
 
-<h1 style="padding:25px; font-family: Trebuchet MS; text-align: center;">Enroll in New Class</h1>
+<h1 style="padding:25px; font-family: Trebuchet MS; margin-left: 300px;">Enroll in New Class</h1>
 
 
 <!----------4 Dropdowns------------>
 <br />
 <center>
-    <form action="#" style="font-family:Trebuchet MS;">
+    <form action="#" style="font-family:Trebuchet MS; margin-left: 20%;">
 
         <select name="cars" id="cars">
             <option value="year">Year</option>
@@ -66,7 +81,7 @@
         </div>
 
         <div class="f4">
-            <input type="submit" value="Submit" >
+            <input type="submit" value="Submit">
     </form>
 
     </div>
@@ -75,7 +90,7 @@
 
     <!------------teachers' list------------->
 
-    <table border=1 width="80%" cellpadding="10px" border="1" style="border-collapse: collapse; font-family:Trebuchet MS;">
+    <table border=1 width="50%" cellpadding="10px" border="1" style="border-collapse: collapse; font-family:Trebuchet MS; margin-left: 20%;">
         <thead>
         <tr>
             <th>Select</th>
@@ -98,20 +113,19 @@
         </tr>
         </tbody>
     </table>
-    <p><i>Note: An admission fee of 1000 LKR has to be paid along with the relevant class fee</I></p>
+    <!--<p><i>Note: An admission fee of 1000 LKR has to be paid along with the relevant class fee</I></p>
 </center>
 <div class="checkfee">
     <button style="width:190px; margin-left:580px; margin-top: 25px; margin-bottom: 25px;">Check Fees</button>
     <br /><br /><br /><br />
     <p style="font-size: 18px;font-family:Trebuchet MS;margin-left:0px; margin-top: 50px; color: red;">Total due amount = Rs. 2500</p>
 </div>
-<!----------upload deposit slip------------>
+-->
+<!---------upload deposit slip------------>
 <div style="padding-left:5%; font-family:Trebuchet MS;">
     <form action="x" method="post" enctype="multipart/form-data">
-        <p style="font-size: 18px;font-family:Trebuchet MS;">Please upload the payment slip for the selected classes </p>
-        <input type="file" name="uploadslip" id="uploadslip">
         <br /><br />
-        <input type="submit" value="Enroll now" name="submit" style= "width: 15%;">
+        <input type="submit" value="Enroll now" name="submit" style= "width: 15%; margin-left: 650px;">
         <br /><br /><br /><br />
     </form>
 </div>
