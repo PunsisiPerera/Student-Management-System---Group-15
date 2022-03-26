@@ -24,20 +24,30 @@
             <h1 align="center" class=removepadding>Create New Class</h1>
 	    <p class=removepadding>Welcome!<br /><br /><br /><p>
             
-        <form method="post">
+        <form method="post" action="CreateNewClassServlet">
               <br /><br /><br /><br /><br>
-              <h1>Create New Class</h1>   
-              
-         <p class=textdecors class=removepadding>Start time:</p>
-         <input type="text" class="endtime" name="endtime" placeholder="Enter the start time here" ><br><br>
-        <br><br>  
-        
-         <p class=textdecors class=removepadding>End time:</p>
-         <input type="text" class="endtime" name="endtime" placeholder="Enter the end time here" ><br><br>
-        <br><br>       
-        
-        
-       
+              <h1>Create New Class</h1>
+
+            <p class=textdecors class=removepadding>Class Name:</p>
+            <input type="text" class="endtime" name="name" placeholder="Enter a class name here" ><br><br>
+            <br>
+
+            <p class=textdecors class=removepadding>Maximum student count:</p>
+            <input type="text" class="endtime" name="student_count" placeholder="Enter the maximum student count" ><br><br>
+            <br>
+
+            <p class=textdecors class=removepadding>Class Year:</p>
+            <input type="text" class="endtime" name="year" placeholder="Enter the AL year" ><br><br>
+            <br>
+
+            <p class=textdecors class=removepadding>Start time:</p>
+            <input type="text" class="endtime" name="start_time" placeholder="Enter the Starting Time" ><br><br>
+            <br>
+
+            <p class=textdecors class=removepadding>End time:</p>
+            <input type="text" class="end_time" name="end_time" placeholder="Enter the Ending Time" ><br><br>
+            <br>
+
         
         <input type="submit" name="submitbutton4" value="Create a new class"><br><br>
         
@@ -45,7 +55,7 @@
         </div>
         
         <div class="abc">
-            
+            <form method="post" action="CreateNewClassServlet">
             <p class=textdecors class=removepadding>Subject:</p>
 	
         <select name="classes" class="classes">
@@ -69,14 +79,14 @@
             <option value="Sunsday">Sunday</option>
         </select>
         <br><br> 
-        
+            </form>
         </div>
        
      
 	
        
         <div class="xyz">
-        
+            <form method="post" action="CreateNewClassServlet">
          <p class=textdecors class=removepadding>Select teacher:</p>
 	
         <select name="classes" class="classes">
@@ -96,9 +106,9 @@
             <option value="Classroom4">Classroom4</option>
         </select>
         <br><br> 
-        
-        </div> 
-          
+            </form>
+        </div>
+
           </body>
 </html>   
         

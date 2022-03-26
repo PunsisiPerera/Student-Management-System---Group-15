@@ -72,7 +72,7 @@ public class StudentDao {
         Class.forName("com.mysql.jdbc.Driver");
         Connection connection = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/student_management_system", "root", "");
         PreparedStatement preparedStatement = connection.prepareStatement("update student set f_name = ?, l_name=?, address =?, email=?,contact_no=? where studentID=?");
-        System.out.println(preparedStatement);
+
 
         preparedStatement.setString(1, student.getF_name());
         preparedStatement.setString(2,student.getL_name());
@@ -81,6 +81,7 @@ public class StudentDao {
         preparedStatement.setString(5,student.getContact_no());
         preparedStatement.setString(6,student.getStudentID());
 
+        System.out.println(preparedStatement);
         boolean rowUpdated = preparedStatement.executeUpdate()>0;
         return rowUpdated;
     }

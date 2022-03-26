@@ -8,8 +8,8 @@
     <body>
         <div>
 		<ul>
-			
-	            <li style="float:right"><a href="../index.jsp"><i class="fas fa-sign-out-alt"></i> Sign Out</a></li>   			
+
+	            <li style="float:right"><a href="../index.jsp"><i class="fas fa-sign-out-alt"></i> Sign Out</a></li>
 	            <li style="float:right"><a href="../contactus.jsp"><i class="fas fa-address-book"></i> Contact Us</a></li>
 	            <li style="float:right"><a href="../help.jsp"><i class="fas fa-hands-helping"></i> Help</a></li>
 	            <li style="float:right"><a href="../aboutus.jsp"><i class="fas fa-users"></i> About Us</a></li>
@@ -17,17 +17,17 @@
 		</ul>
 	</div>
           <a href="./ofiiceadminaccountsettings.jsp"><img src="../img/avatar.png" alt="Avatar" class="avatar" style="padding:0px;"></a>
-        
+
         <div class="hdiv">
             <h1 align="center" class=removepadding>Mark Attendance</h1>
 	    <p class=removepadding>Welcome!<br /><br /><br /><p>
-            
+
         <form method="post">
               <br /><br /><br /><br /><br>
-              <h1>Mark Attendance</h1>    
-        
+              <h1>Mark Attendance</h1>
+
         <p class=textdecors class=removepadding>Select the class:</p>
-	
+
         <select name="classes" class="classes">
             <option value="Bio2023">Bio2023</option>
             <option value="Maths2023">Maths2023</option>
@@ -38,16 +38,16 @@
             <p class=textdecors class=removepadding>Enter Student ID Number:</p>
 	    <input type="text" class="studentnumber" name="stno" placeholder="Enter the student number here"><br><br>
 	<input type="submit" name="submitbutton5" value="Search"><br><br>
-	
+
 	<textarea rows=20 cols=50></textarea><br><br><br>
 
 
             <input type="submit" name="submitbutton4" value="Mark Attendance"><br><br>
 
         </form>
-        </div>    
-      
-        
+        </div>
+
+
 
     </body>
 </html>
