@@ -9,7 +9,7 @@
 <html>
 <head>
     <title>Student Registration Form</title>
-    <link rel="stylesheet" href="../css/registrationform.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/registrationform.css">
     <script src="https://kit.fontawesome.com/e1eaef53f0.js" crossorigin="anonymous"></script>
 </head>
 <body>
