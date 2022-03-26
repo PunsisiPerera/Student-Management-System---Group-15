@@ -33,6 +33,12 @@
 		
 	</div>
 
+	<div class="abc">
+		<a href="./createnewclass.jsp"><button style="margin-bottom: 20px;">Create New Class</button></a>
+		<button>Generate Report</button>
+	</div>
+
+
 
 	<script>
 	/* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - 
@@ -107,9 +113,7 @@
         </div>
 </div>
 
-<div class="abc">
-	<a href="./createnewclass.jsp"><button>Create New Class</button></a>
-</div>
+
             
 
 

@@ -13,6 +13,22 @@
     <script src="https://kit.fontawesome.com/e1eaef53f0.js" crossorigin="anonymous"></script>
 </head>
 <body>
+
+<!-----------Side Nav bar---------->
+<div class="sidenav">
+    <h2 style="font-family:Trebuchet MS;">Pragathi Institute</h2>
+    <div class="left">
+        <div class="container">
+            <img src="../img/avatar.png" alt="Avatar" class="avatar">
+            <a href="./studentaccountsettings.jsp"><button style="width:175px; height: 40px; background-color: #001D3D; font-family:Trebuchet MS; color: white; border: none; border-radius: 20px; font-size:15px; text-align:center; margin: 10px; margin-left: 15px; display: block; cursor: pointer;">Edit Profile</button></a>
+            <a href="../resetpassword.jsp"><button style="width:175px; height: 40px; background-color: #001D3D; font-family:Trebuchet MS; color: white; border: none; border-radius: 20px; font-size:15px; text-align:center; margin: 10px; margin-left: 15px; display: block; cursor: pointer;">Change Password</button></a>
+        </div>
+    </div>
+
+
+</div>
+
+
 <!-----------Nav bar---------->
 <div>
     <ul>
@@ -24,15 +40,16 @@
         <li style="float:right"><a href="studenthome.jsp" class="active" ><i class="fas fa-home"></i> Home</a></li>
     </ul>
 </div>
+
 <!---------profile picture--------->
-<a href="studentaccountsettings.jsp"><img src="../img/avatar.png" alt="Avatar" class="avatar"></a>
+<!--<a href="studentaccountsettings.jsp"><img src="../img/avatar.png" alt="Avatar" class="avatar"></a>-->
 <div class="bd">
     <br />
     <!--<img src="../dashboard.jpg">-->
 
     <!-------- main parts---------->
-    <h1 style="text-align: center;">Student Management System</h1>
-    <h1 id="f1"> Welcome, Jane!</h1>
+    <h1 style="margin-left: 300px;">Student Management System</h1>
+    <!--<h1 id="f1"> Welcome, Jane!</h1>-->
     <br /><br /><br />
     <div class="f2">
 
@@ -44,13 +61,13 @@
             </div>
         </div>
 
-        <div class="al1">
+        <!--<div class="al1">
             <div class="card">
                 <div class="container">
                     <h2><a href="generatereport.jsp">Generate Report</a></h2>
                 </div>
             </div>
-        </div>
+        </div>-->
 
         <div class="al2">
             <div class="card">
