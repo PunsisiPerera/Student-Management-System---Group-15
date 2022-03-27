@@ -39,54 +39,35 @@
             <input type="text" class="endtime" name="year" placeholder="Enter the AL year" ><br><br>
             <br>
 
-            <p class=textdecors class=removepadding>Start time:</p>
-            <input type="text" class="endtime" name="start_time" placeholder="Enter the Starting Time" ><br><br>
-            <br>
-
-            <p class=textdecors class=removepadding>End time:</p>
-            <input type="text" class="end_time" name="end_time" placeholder="Enter the Ending Time" ><br><br>
+            <p class=textdecors class=removepadding>Medium:</p>
+            <input type="text" class="endtime" name="medium" placeholder="Enter the Starting Time" ><br><br>
             <br>
 
 
-        
-        <div class="abc">
-            <p class=textdecors class=removepadding>Subject:</p>
+          <p class=textdecors class=removepadding>Subject:</p>
 	
-        <select name="subject" class="classes">
-            <option value="Bio2023">Bio2023</option>
-            <option value="Maths2023">Maths2023</option>
-            <option value="Arts2023">Arts2023</option>
-            <option value="Commerce2023">Commerce2023</option>
+        <select name="classes" class="classes">
+            <option value="Maths">Subject1</option>
         </select>
         <br><br>
         
         <p class=textdecors class=removepadding>Day of the week:</p>
         
-        <select name="day" class="classes">
-            <option value="Monday">Monday</option>
-            <option value="Tuesday">Tuesday</option>
-            <option value="Wednesday">Wednesday</option>
-            <option value="Thursday">Thursday</option>
-            <option value="Thursday">Thursday</option>
-            <option value="Friday">Friday</option>
-            <option value="Saturday">Saturday</option>
-            <option value="Sunsday">Sunday</option>
+        <select name="classes" class="classes">
+            <option value="monday">Monday</option>
+            <option value="tuesday">Tuesday</option>
+            <option value="wednesday">Wednesday</option>
+            <option value="thursday">Thursday</option>
+            <option value="friday">Friday</option>
+            <option value="saturday">Saturday</option>
+            <option value="sunsday">Sunday</option>
         </select>
-        <br><br> 
+        <br><br>
 
-        </div>
-       
-     
-	
-       
-        <div class="xyz">
          <p class=textdecors class=removepadding>Select teacher:</p>
 	
-        <select name="teacher" class="classes">
-            <option value="Teacher1">Teacher1</option>
-            <option value="Teacher2">Teacher2</option>
-            <option value="Teacher3">Teacher3</option>
-            <option value="Teacher4">Teacher4</option>
+        <select name="classes" class="classes">
+            <option value="Bio2023">Teacher1</option>
         </select>
         <br><br> 
         
@@ -94,14 +75,23 @@
 	
         <select name="class_room" class="classes">
             <option value="Classroom1">Classroom1</option>
-            <option value="Classroom2">Classroom</option>
-            <option value="Classroom3">Classroom3</option>
-            <option value="Classroom4">Classroom4</option>
         </select>
         <br><br>
+
+            <p class=textdecors class=removepadding>Select start time:</p>
+            <input type="time" name="stime">
+            <br><br>
+
+            <p class=textdecors class=removepadding>Select finish time:</p>
+            <input type="time" name="ftime">
+            <br><br>
+
+            <input type="submit" name="submitbutton4" value="Create a new class"><br><br>
+
+            </form>
         </div>
-    </form>
-    </div>
+
+
     </body>
 </html>   
         

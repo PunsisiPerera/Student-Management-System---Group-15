@@ -31,6 +31,16 @@ body {
   
 }
 
+select{
+  width:100%;
+  height: 8%;
+}
+
+input[type=time]{
+  width: 100%;
+  height: 8%;
+}
+
 .xyz {
   
   background-color: #ffffff;
