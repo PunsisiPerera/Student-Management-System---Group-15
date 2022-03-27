@@ -61,6 +61,7 @@ li a:hover:not(.active) {
 
 .tab th{
     height:45px;
+    background-color: #FFC300;
 }
 
 
@@ -72,10 +73,48 @@ li a:hover:not(.active) {
 
 
 /*buttons*/
-.tab button, input[type=submit]{
-    width:100px;
-    height: 50px;
-    padding-left: 50px;
+
+.tab input[type=submit]{
+    width: 50px;
+    height: 20px;
+    background-color: #001D3D;
+    font-family:Trebuchet MS;
+    color: white;
+    padding: 3px 3px;
+    border: none;
+    border-radius: 10px;
+    font-size:12px;
+    cursor: pointer;
+    text-align:center;
+    display: block;
+    margin: 0 auto;
+}
+
+button:hover {
+    background-color: #FFC300;
+}
+
+.tab input[type=submit]:hover {
+    background-color: #FFC300;
+}
+
+.delete{
+    margin-left:70px;
+    margin-right:-50px;
+}
+
+.delete button:hover{
+    background-color:red;
+}
+
+/*generate report btn styles*/
+.abc{
+    margin: 20px;
+}
+
+.abc input[type=submit]{
+    width: 200px;
+    height: 40px;
     background-color: #001D3D;
     font-family:Trebuchet MS;
     color: white;
@@ -89,16 +128,7 @@ li a:hover:not(.active) {
     margin: 0 auto;
 }
 
-button:hover {
+.abc input[type=submit]:hover {
     background-color: #FFC300;
 }
 
-
-.delete{
-    margin-left:70px;
-    margin-right:-50px;
-}
-
-.delete button:hover{
-    background-color:red;
-}
