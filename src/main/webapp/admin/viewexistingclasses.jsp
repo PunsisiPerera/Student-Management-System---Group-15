@@ -35,7 +35,7 @@
 
 	<div class="abc">
 		<a href="./createnewclass.jsp"><button style="margin-bottom: 20px;">Create New Class</button></a>
-		<button>Generate Report</button>
+		<!--<button>Generate Report</button>-->
 	</div>
 
 	<script>
@@ -86,7 +86,7 @@
 				<td align="center">test1</td>
 				<td align="center">test1</td>
 				<td align="center">test1</td>
-                                <td align="center">test1</td>
+				<td align="center">test1</td>
                                 <td align="center"><input type="submit" name="submitbutton4" value="Edit"><br>
                                 <input type="submit" name="submitbutton4" value="Delete"><br></td>
 			</tr>
@@ -100,7 +100,7 @@
 				<td align="center">test2</td>
 				<td align="center">test2</td>
 				<td align="center">test2</td>
-                                <td align="center">test2</td>
+							<td align="center">test2</td>
                                 <td align="center"><input type="submit" name="submitbutton4" value="Edit"><br>
                                 <input type="submit" name="submitbutton4" value="Delete"><br></td>
 			</tr>

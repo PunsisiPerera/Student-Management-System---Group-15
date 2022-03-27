@@ -2,7 +2,7 @@
 
 <html>
 <head>
-    <title>Teacher Registration Form | Admin</title>
+    <title>Edit Teacher Form | Admin</title>
     <link rel="stylesheet" href="${pageContext.request.contextPath}/css/teacherregistration.css">
     <script src="https://kit.fontawesome.com/e1eaef53f0.js" crossorigin="anonymous"></script>
 </head>
@@ -15,12 +15,12 @@
         <li style="float:right"><a href="../contactus.jsp"><i class="fas fa-address-book"></i> Contact Us</a></li>
         <li style="float:right"><a href="../help.jsp"><i class="fas fa-hands-helping"></i> Help</a></li>
         <li style="float:right"><a href="../aboutus.jsp"><i class="fas fa-users"></i> About Us</a></li>
-        <li style="float:right"><a href="admindashboard.jsp"><i class="fas fa-columns"></i> Dashboard</a></li>
+        <li style="float:right"><a href="./admindashboard.jsp"><i class="fas fa-columns"></i> Dashboard</a></li>
     </ul>
 </div>
 
 
-<div class="hdiv" style="margin-top:-620px;">
+<div class="hdiv" style="margin-top:-300px;">
     <form method="post" action="${pageContext.request.contextPath}/EditTeacherServlet">
 
         <h1>Update Teacher's Details</h1><br><br>
