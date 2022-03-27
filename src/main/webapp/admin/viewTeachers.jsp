@@ -18,11 +18,11 @@
 <div>
     <ul>
 
-        <li style="float:right"><a href="../index.html"><i class="fas fa-sign-out-alt"></i> Sign Out</a></li>
-        <li style="float:right"><a href="./contactus.html"><i class="fas fa-address-book"></i> Contact Us</a></li>
-        <li style="float:right"><a href="./help.html"><i class="fas fa-hands-helping"></i> Help</a></li>
-        <li style="float:right"><a href="./aboutus.html"><i class="fas fa-users"></i> About Us</a></li>
-        <li style="float:right"><a href="../home.html"><i class="fas fa-columns"></i> Dashboard</a></li>
+        <li style="float:right"><a href="../index.jsp"><i class="fas fa-sign-out-alt"></i> Sign Out</a></li>
+        <li style="float:right"><a href="./contactus.jsp"><i class="fas fa-address-book"></i> Contact Us</a></li>
+        <li style="float:right"><a href="./help.jsp"><i class="fas fa-hands-helping"></i> Help</a></li>
+        <li style="float:right"><a href="./aboutus.jsp"><i class="fas fa-users"></i> About Us</a></li>
+        <li style="float:right"><a href="../home.jsp"><i class="fas fa-columns"></i> Dashboard</a></li>
     </ul>
 </div>
 
@@ -65,7 +65,7 @@
                     <c:out value="${teacher.contact_no}" />
                 </td>
 
-                <td><a href="edit?id=<c:out value='${teacher.teacherID}' />">Edit</a> &nbsp;&nbsp;&nbsp;&nbsp; <a href="delete?id=<c:out value='${teacher.teacherID}' />">Delete</a></td>
+                <td><a href="TeacherSearchServlet?teacherID=<c:out value='${teacher.teacherID}' />">Edit</a>
             </tr>
         </c:forEach>
         <!-- } -->

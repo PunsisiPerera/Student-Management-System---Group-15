@@ -26,6 +26,10 @@
     </ul>
 </div>
 
+<form action="CSVEmpReportServlet">
+    <input type="submit" value="Generate CSV report">
+</form>
+
 <div class="tab">
     <h1>Employee List</h1>
     <table  border="1">
@@ -69,7 +73,7 @@
                     <c:out value="${staff.position}" />
                 </td>
 
-                <td><a href="edit?id=<c:out value='${staff.staffID}' />">Edit</a> &nbsp;&nbsp;&nbsp;&nbsp; <a href="delete?id=<c:out value='${staff.staffID}' />">Delete</a></td>
+                <td><a href="EmployeeSearchServlet?empId=<c:out value='${staff.staffID}' />">Edit</a> &nbsp;&nbsp;&nbsp;&nbsp; <a href="DeleteEmployeeServlet?staffID=<c:out value='${staff.staffID}' />">Delete</a></td>
             </tr>
         </c:forEach>
         <!-- } -->

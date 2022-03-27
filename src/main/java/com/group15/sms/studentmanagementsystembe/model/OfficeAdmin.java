@@ -27,6 +27,16 @@ public class OfficeAdmin {
         this.security = security;
     }
 
+    public OfficeAdmin(int staffID, String f_name, String l_name, String address, String email, String contact_no, String position) {
+        this.staffID =staffID;
+        this.f_name = f_name;
+        this.l_name = l_name;
+        this.address = address;
+        this.contact_no = contact_no;
+        this.email = email;
+        this.position = position;
+    }
+
     public int getStaffID() {
         return staffID;
     }

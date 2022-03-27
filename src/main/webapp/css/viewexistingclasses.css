@@ -105,13 +105,22 @@ body{
 
 .tab table{
 	border-collapse: collapse;
-	margin-left: 300px;
-	width: 60%;
+	margin-left: 130px;
+    margin-right: 20px;
+    font-family: Trebuchet MS;
+	width: 80%;
 	
 }
 
-.tab th,td{
-	width: 100px;
+.tab td{
+    column-width: 40px;
+    text-align: left;
+    padding: 15px;
+}
+
+.tab th{
+    background-color: #FFC300;
+    height: 45px;
 }
 
 input[type=submit]{
@@ -154,10 +163,81 @@ button:hover {
     background-color: #FFC300;
 }
 
+/*buttons in the table*/
+
+/*buttons in the table*/
+
+.tab input[type=submit]{
+    width: 50px;
+    height: 20px;
+    background-color: #001D3D;
+    font-family:Trebuchet MS;
+    color: white;
+    padding: 3px 3px;
+    border: none;
+    border-radius: 10px;
+    font-size:12px;
+    cursor: pointer;
+    text-align:center;
+    display: block;
+    margin: 0 auto;
+}
+
+.tab input[type=submit]:hover {
+    background-color: #FFC300;
+}
 
 
+.abc{
+    margin: 20px;
+}
 
-   
+.abc button{
+    width: 200px;
+    height: 40px;
+    background-color: #001D3D;
+    font-family:Trebuchet MS;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 20px;
+    font-size:15px;
+    cursor: pointer;
+    text-align:center;
+    display: block;
+    margin: 0 auto;
+}
+
+.abc button:hover {
+    background-color: #FFC300;
+}
 
 
+.tab input[type=submit]:hover {
+    background-color: #FFC300;
+}
 
+
+.abc{
+    margin: 20px;
+}
+
+.abc button{
+    width: 200px;
+    height: 40px;
+    background-color: #001D3D;
+    font-family:Trebuchet MS;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 20px;
+    font-size:15px;
+    cursor: pointer;
+    text-align:center;
+    display: block;
+    margin: 0 auto;
+}
+
+.abc button:hover {
+    background-color: #FFC300;
+}
