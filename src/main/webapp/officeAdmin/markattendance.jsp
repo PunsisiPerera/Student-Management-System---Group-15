@@ -19,9 +19,7 @@
           <a href="./ofiiceadminaccountsettings.jsp"><img src="../img/avatar.png" alt="Avatar" class="avatar" style="padding:0px;"></a>
         
         <div class="hdiv">
-            <h1 align="center" class=removepadding>Mark Attendance</h1>
-	    <p class=removepadding>Welcome!<br /><br /><br /><p>
-            
+
         <form method="post">
               <br /><br /><br /><br /><br>
               <h1>Mark Attendance</h1>    

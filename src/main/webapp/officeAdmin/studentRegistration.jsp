@@ -28,38 +28,77 @@
 
 <div class="hdiv">
 
-    <form action="${pageContext.request.contextPath}/StudentRegisterServlet" method="post" >
+    <form action="${pageContext.request.contextPath}/StudentRegisterServlet" method="post" name="form1" onsubmit="required()">
        
         <h1>Student Registration Form</h1><br><br>
         <p class=textdecors class=removepadding>Student ID</p>
-        <input type="text" class="name" name="id" placeholder="Enter ID">
-        <br />
-        <p class=textdecors class=removepadding>QR Code</p>
-        <input type="text" class="name" name="qr" placeholder="Enter QR Code">
+        <input type="text" class="name" name="id" placeholder="Enter ID" required>
         <br />
         <p class=textdecors class=removepadding>First Name:</p>
-        <input type="text" class="name" name="user_name1" placeholder="Enter your name with initials">
+        <input type="text" class="name" name="user_name1" placeholder="Enter your name with initials" required>
         <br />
         <p class=textdecors class=removepadding>Last Name:</p>
-        <input type="text" id="fullname" name="user_name2" placeholder="Enter your full name">
+        <input type="text" id="fullname" name="user_name2" placeholder="Enter your full name" required>
         <br />
         <p class=textdecors class=removepadding>Address:</p>
-        <input type="text" id="address" name="useraddress" placeholder="Enter your address"><br><br>
+        <input type="text" id="address" name="useraddress" placeholder="Enter your address" required><br><br>
         <p class=textdecors class=removepadding>Contact number:</p>
-        <input type="text" id="contact" name="usercontact" placeholder="Enter your contact number"><br><br>
+        <input type="text" id="contact" name="usercontact" placeholder="Enter your contact number" required><br><br>
         <p class=textdecors class=removepadding>Email:</p>
-        <input type="text" id="email" name="email" placeholder="Enter your email address"><br><br>
-        <p class=textdecors class=removepadding>Mother's Maiden Name (For Security Purposes):</p>
-        <input type="text" id="guardianname" name="userguardianname" placeholder="Enter your Mother's Maiden Name"><br><br>
-        <p class=textdecors class=removepadding>New Password:</p>
-        <input type="password" id="pass1" name="pass" placeholder="Enter your new password"><br><br>
+        <input type="text" id="email" name="email" placeholder="Enter your email address" required><br><br>
+        <p class=textdecors class=removepadding>Password:</p>
+        <input type="password" id="pass1" name="pass" placeholder="Enter your password" required><br><br>
         <p class=textdecors class=removepadding>Confirm Password:</p>
-        <input type="password" id="pass2" name="confpass" placeholder="Enter your new password again"><br><br>
+        <input type="password" id="pass2" name="confpass" placeholder="Enter your new password again" required><br><br>
         <br /><br /><br />
-        <input type="submit" name="submitbutton4" value="Sign Up"><br><br><br><br><br><br>
+        <input type="submit" name="submitbutton4" value="Sign Up" onclick="mySubmit()"><br><br><br><br><br><br>
+
+        <script>
+            function mySubmit(){
+                confirm("Confirm submission?");
+            }
+
+            function required() {
+                var empt1 = document.forms["form1"]["id"].value;
+                var empt2 = document.forms["form1"]["user_name1"].value;
+                var empt3 = document.forms["form1"]["user_name2"].value;
+                var empt4 = document.forms["form1"]["user_address"].value;
+                var empt5 = document.forms["form1"]["user_contact"].value;
+                var empt6 = document.forms["form1"]["email"].value;
+                var empt7 = document.forms["form1"]["pass"].value;
+                var empt8 = document.forms["form1"]["conf_pass"].value;
+
+                if (empt1 == "" || empt2 == "" || empt3 == "" || empt4 == "" || empt5 == "" || empt6 == "" || empt7 == "" || empt8 == "") {
+                    alert("Please input a Value");
+                    return false;
+                }
+                else
+                {
+                    alert("Registration successful");
+                    return true;
+                }
+            }
+
+            /*
+                function validate() {
+
+                    var empt5 = document.forms["form1"]["user_contact"].value;
+
+
+                    if (empt5.value.length != 10) {
+                        alert("Invalid number");
+                        empt5.focus();
+                        return false;
+                    }
+
+             */
+
+        </script>
+
     </form>
 
 </div>
+
 
 
 
