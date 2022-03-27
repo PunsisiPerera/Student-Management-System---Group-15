@@ -11,7 +11,7 @@ public class StudentRegisterDao {
         int result = 0;
         Class.forName("com.mysql.jdbc.Driver");
         Connection connection = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/student_management_system","root","");
-        PreparedStatement preparedStatement = connection.prepareStatement("insert into student values(?,?,?,?,?,?,?,?,?,?)");
+        PreparedStatement preparedStatement = connection.prepareStatement("insert into student values(?,?,?,?,?,?,?,?)");
         {
             preparedStatement.setString(1,student.getStudentID());
             preparedStatement.setString(2,student.getF_name());
@@ -20,9 +20,8 @@ public class StudentRegisterDao {
             preparedStatement.setString(5,student.getEmail());
             preparedStatement.setString(6,student.getPassword());
             preparedStatement.setString(7,student.getConfPassword());
-            preparedStatement.setString(8,student.getQrCode());
-            preparedStatement.setString(9,student.getContact_no());
-            preparedStatement.setString(10,student.getSecurity());
+            preparedStatement.setString(8,student.getContact_no());
+
 
             System.out.println(preparedStatement);
             result = preparedStatement.executeUpdate();

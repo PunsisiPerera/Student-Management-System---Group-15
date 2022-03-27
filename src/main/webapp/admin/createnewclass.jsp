@@ -7,9 +7,9 @@
 </head>
     <body>
 
-      <form action="" method="post">
+
           
-                <div>
+    <div>
 		<ul>
 			
 	            <li style="float:right"><a href="../index.jsp"><i class="fas fa-sign-out-alt"></i> Sign Out</a></li>   			
@@ -20,14 +20,13 @@
 		</ul>
 	</div>
         
-        <div class="hdiv">
-            <h1 align="center" class=removepadding>Create New Class</h1>
+    <div class="hdiv">
+        <h1 align="center" class=removepadding>Create New Class</h1>
 	    <p class=removepadding>Welcome!<br /><br /><br /><p>
-            
-        <form method="post" action="CreateNewClassServlet">
+
               <br /><br /><br /><br /><br>
               <h1>Create New Class</h1>
-
+            <form action="/CreateNewClassServlet" method="post">
             <p class=textdecors class=removepadding>Class Name:</p>
             <input type="text" class="endtime" name="name" placeholder="Enter a class name here" ><br><br>
             <br>
@@ -74,7 +73,7 @@
         
          <p class=textdecors class=removepadding>Select classroom:</p>
 	
-        <select name="classes" class="classes">
+        <select name="class_room" class="classes">
             <option value="Classroom1">Classroom1</option>
         </select>
         <br><br>

@@ -21,7 +21,6 @@ public class EmployeeRegisterServlet extends HttpServlet {
         String address = request.getParameter("useraddress");
         String contact_no = request.getParameter("usercontact");
         String email = request.getParameter("email");
-        String security = request.getParameter("userguardianname");
         String password = request.getParameter("pass");
 
         OfficeAdmin officeAdmin = new OfficeAdmin();
@@ -32,7 +31,6 @@ public class EmployeeRegisterServlet extends HttpServlet {
         officeAdmin.setEmail(email);
         officeAdmin.setContact_no(contact_no);
         officeAdmin.setPosition(position);
-        officeAdmin.setSecurity(security);
         officeAdmin.setPassword(password);
 
         EmployeeRegisterDao employeeRegisterDao = new EmployeeRegisterDao();
