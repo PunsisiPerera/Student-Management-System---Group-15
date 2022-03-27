@@ -20,7 +20,6 @@ public class TeacherRegisterServlet extends HttpServlet {
         String l_name = request.getParameter("user_name2");
         String address = request.getParameter("useraddress");
         String contact_no = request.getParameter("usercontact");
-        String security = request.getParameter("userguardianname");
         String email = request.getParameter("email");
         String password = request.getParameter("pass");
 
@@ -31,9 +30,9 @@ public class TeacherRegisterServlet extends HttpServlet {
         teacher.setL_name(l_name);
         teacher.setAddress(address);
         teacher.setContact_no(contact_no);
-        teacher.setSecurity(security);
         teacher.setEmail(email);
         teacher.setPassword(password);
+
 
         TeacherRegisterDao teacherRegisterDao = new TeacherRegisterDao();
         try{

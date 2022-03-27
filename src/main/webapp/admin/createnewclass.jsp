@@ -7,9 +7,9 @@
 </head>
     <body>
 
-      <form action="" method="post">
+
           
-                <div>
+    <div>
 		<ul>
 			
 	            <li style="float:right"><a href="../index.jsp"><i class="fas fa-sign-out-alt"></i> Sign Out</a></li>   			
@@ -20,14 +20,13 @@
 		</ul>
 	</div>
         
-        <div class="hdiv">
-            <h1 align="center" class=removepadding>Create New Class</h1>
+    <div class="hdiv">
+        <h1 align="center" class=removepadding>Create New Class</h1>
 	    <p class=removepadding>Welcome!<br /><br /><br /><p>
-            
-        <form method="post" action="CreateNewClassServlet">
+
               <br /><br /><br /><br /><br>
               <h1>Create New Class</h1>
-
+            <form action="/CreateNewClassServlet" method="post">
             <p class=textdecors class=removepadding>Class Name:</p>
             <input type="text" class="endtime" name="name" placeholder="Enter a class name here" ><br><br>
             <br>
@@ -48,27 +47,22 @@
             <input type="text" class="end_time" name="end_time" placeholder="Enter the Ending Time" ><br><br>
             <br>
 
-        
-        <input type="submit" name="submitbutton4" value="Create a new class"><br><br>
-        
-        </form>
-        </div>
+
         
         <div class="abc">
-            <form method="post" action="CreateNewClassServlet">
             <p class=textdecors class=removepadding>Subject:</p>
 	
-        <select name="classes" class="classes">
-            <option value="Maths">Maths</option>
-            <option value="Science">Science</option>
-            <option value="Dancing">Dancing<option>
-            <option value="Music">Music</option>
+        <select name="subject" class="classes">
+            <option value="Bio2023">Bio2023</option>
+            <option value="Maths2023">Maths2023</option>
+            <option value="Arts2023">Arts2023</option>
+            <option value="Commerce2023">Commerce2023</option>
         </select>
         <br><br>
         
         <p class=textdecors class=removepadding>Day of the week:</p>
         
-        <select name="classes" class="classes">
+        <select name="day" class="classes">
             <option value="Monday">Monday</option>
             <option value="Tuesday">Tuesday</option>
             <option value="Wednesday">Wednesday</option>
@@ -79,37 +73,36 @@
             <option value="Sunsday">Sunday</option>
         </select>
         <br><br> 
-            </form>
+
         </div>
        
      
 	
        
         <div class="xyz">
-            <form method="post" action="CreateNewClassServlet">
          <p class=textdecors class=removepadding>Select teacher:</p>
 	
-        <select name="classes" class="classes">
-            <option value="Bio2023">Teacher1</option>
-            <option value="Maths2023">Teacher2</option>
-            <option value="Arts2023">Teacher3</option>
-            <option value="Commerce2023">Teacher4</option>
+        <select name="teacher" class="classes">
+            <option value="Teacher1">Teacher1</option>
+            <option value="Teacher2">Teacher2</option>
+            <option value="Teacher3">Teacher3</option>
+            <option value="Teacher4">Teacher4</option>
         </select>
         <br><br> 
         
          <p class=textdecors class=removepadding>Select classroom:</p>
 	
-        <select name="classes" class="classes">
+        <select name="class_room" class="classes">
             <option value="Classroom1">Classroom1</option>
             <option value="Classroom2">Classroom</option>
             <option value="Classroom3">Classroom3</option>
             <option value="Classroom4">Classroom4</option>
         </select>
-        <br><br> 
-            </form>
+        <br><br>
         </div>
-
-          </body>
+    </form>
+    </div>
+    </body>
 </html>   
         
        

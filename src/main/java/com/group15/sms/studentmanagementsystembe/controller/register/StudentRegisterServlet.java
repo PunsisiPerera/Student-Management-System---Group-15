@@ -21,9 +21,9 @@ public class StudentRegisterServlet extends HttpServlet {
         String email = request.getParameter("email");
         String password = request.getParameter("pass");
         String confPassword = request.getParameter("confpass");
-        String qrCode = request.getParameter("qr");
+
         String contact_no = request.getParameter("usercontact");
-        String security = request.getParameter("userguardianname");
+
 
         Student student = new Student();
 
@@ -34,9 +34,9 @@ public class StudentRegisterServlet extends HttpServlet {
         student.setEmail(email);
         student.setPassword(password);
         student.setConfPassword(confPassword);
-        student.setQrCode(qrCode);
+
         student.setContact_no(contact_no);
-        student.setSecurity(security);
+
 
         StudentRegisterDao studentRegisterDao = new StudentRegisterDao();
         try {

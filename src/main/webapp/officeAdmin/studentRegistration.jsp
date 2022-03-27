@@ -34,9 +34,6 @@
         <p class=textdecors class=removepadding>Student ID</p>
         <input type="text" class="name" name="id" placeholder="Enter ID">
         <br />
-        <p class=textdecors class=removepadding>QR Code</p>
-        <input type="text" class="name" name="qr" placeholder="Enter QR Code">
-        <br />
         <p class=textdecors class=removepadding>First Name:</p>
         <input type="text" class="name" name="user_name1" placeholder="Enter your name with initials">
         <br />
@@ -49,8 +46,6 @@
         <input type="text" id="contact" name="usercontact" placeholder="Enter your contact number"><br><br>
         <p class=textdecors class=removepadding>Email:</p>
         <input type="text" id="email" name="email" placeholder="Enter your email address"><br><br>
-        <p class=textdecors class=removepadding>Mother's Maiden Name (For Security Purposes):</p>
-        <input type="text" id="guardianname" name="userguardianname" placeholder="Enter your Mother's Maiden Name"><br><br>
         <p class=textdecors class=removepadding>New Password:</p>
         <input type="password" id="pass1" name="pass" placeholder="Enter your new password"><br><br>
         <p class=textdecors class=removepadding>Confirm Password:</p>
