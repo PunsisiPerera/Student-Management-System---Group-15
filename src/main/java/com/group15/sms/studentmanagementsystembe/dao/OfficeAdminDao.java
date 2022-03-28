@@ -29,6 +29,7 @@ public class OfficeAdminDao {
            String password = rs.getString("password");
            String position = rs.getString("position");
            String security = rs.getString("security");
+
            officeAdmins.add(new OfficeAdmin(staffID,f_name,l_name,address,contact_no,email,password,position,security));
 
         }

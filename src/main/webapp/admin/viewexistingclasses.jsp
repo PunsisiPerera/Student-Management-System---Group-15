@@ -36,7 +36,7 @@
 
 	<div class="abc">
 		<a href="./createnewclass.jsp"><button style="margin-bottom: 20px;">Create New Class</button></a>
-		<button>Generate Report</button>
+		<!--<button>Generate Report</button>-->
 	</div>
 
 	<script>
