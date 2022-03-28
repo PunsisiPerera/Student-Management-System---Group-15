@@ -25,7 +25,7 @@
 
 	<div class="hdiv">
 
-		<form method="post" action="${pageContext.request.contextPath}/EmployeeRegisterServlet">
+		<form method="post" action="${pageContext.request.contextPath}/EmployeeRegisterServlet" onsubmit="required() return phonenumber(empt5)">
 		<br /><br /><br /><br />
                        <br /><br /> <br /><br /><h1>Employee Registration Form</h1>
                         <br /><br />
@@ -43,20 +43,67 @@
                         <input type="text" class="contact" name="usercontact" placeholder="Enter your contact number" required><br><br>
 			<p class=textdecors class=removepadding>Email:</p>
 			<input type="text" class="email" name="email" placeholder="Enter your email address" required><br><br>
-                        <p class=textdecors class=removepadding>Mother's Maclassen Name (For Security Purposes):</p>
-                        <input type="text" class="guardianname" name="userguardianname" placeholder="Enter your Mother's Maclassen Name" required><br><br>
-                        <p class=textdecors class=removepadding>New Password:</p>
+                        <p class=textdecors class=removepadding>Password:</p>
 			<input type="password" class="pass" name="pass" placeholder="Enter your new password" required><br><br>
-
-			<input type="submit" name="submitbutton4" value="Sign Up"><br><br><br><br><br><br>
+			<p class=textdecors class=removepadding>Confirm Password:</p>
+			<input type="password" id="pass2" name="confpass" placeholder="Enter your new password again" required><br><br>
+			<input type="submit" name="submitbutton4" value="Sign Up" onclick="mySubmit()"><br><br><br><br><br><br>
 		</form>
 
 	</div>
 
         
+	  </div>
 
-      </div>
-       
+	  <script>
+		  function mySubmit(){
+			  confirm("Confirm submission?");
+		  }
 
-    </body>
+
+		  function required() {
+
+			  var empt1 = document.forms["form1"]["user_name1"].value;
+			  var empt2 = document.forms["form1"]["user_name2"].value;
+			  var empt3 = document.forms["form1"]["user_position"].value;
+			  var empt4 = document.forms["form1"]["useraddress"].value;
+			  var empt5 = document.forms["form1"]["usercontact"].value;
+			  var empt6 = document.forms["form1"]["email"].value;
+			  var empt7 = document.forms["form1"]["pass"].value;
+			  var empt8 = document.forms["form1"]["conf_pass"].value;
+
+			  if (empt1 == "" || empt2 == "" || empt3 == "" || empt4 == "" || empt5 == "" || empt6 == "" || empt7 == "" || empt8 == "") {
+				  alert("Please input a Value");
+				  return true;
+			  }
+			  else
+			  {
+				  alert("Registration successful");
+				  return false;
+			  }
+		  }
+
+
+
+		  function phonenumber(empt5)
+		  {
+			  var empt5 = document.forms["form1"]["user_contact"].value;
+			  var phoneno = /^\d{10}$/;
+			  if(empt5.value.match(phoneno))
+			  {
+				  alert("valid Phone Number");
+				  return true;
+			  }
+			  else
+			  {
+				  alert("Not a valid Phone Number");
+				  return false;
+			  }
+		  }
+
+	  </script>
+
+
+
+	</body>
 </html>

@@ -28,7 +28,7 @@
 
 <div class="hdiv">
 
-    <form action="${pageContext.request.contextPath}/StudentRegisterServlet" method="post" name="form1" onsubmit="required()">
+    <form action="${pageContext.request.contextPath}/StudentRegisterServlet" method="post" name="form1" onsubmit="required(); return phonenumber()">
        
         <h1>Student Registration Form</h1><br><br>
         <p class=textdecors class=removepadding>Student ID</p>
@@ -50,13 +50,17 @@
         <input type="password" id="pass1" name="pass" placeholder="Enter your password" required><br><br>
         <p class=textdecors class=removepadding>Confirm Password:</p>
         <input type="password" id="pass2" name="confpass" placeholder="Enter your new password again" required><br><br>
-        <br /><br /><br />
+        <br /><br /><br /><br /><br /><br />
         <input type="submit" name="submitbutton4" value="Sign Up" onclick="mySubmit()"><br><br><br><br><br><br>
+
+
+    </form>
 
         <script>
             function mySubmit(){
                 confirm("Confirm submission?");
             }
+
 
             function required() {
                 var empt1 = document.forms["form1"]["id"].value;
@@ -70,32 +74,36 @@
 
                 if (empt1 == "" || empt2 == "" || empt3 == "" || empt4 == "" || empt5 == "" || empt6 == "" || empt7 == "" || empt8 == "") {
                     alert("Please input a Value");
-                    return false;
+                    return true;
                 }
                 else
                 {
                     alert("Registration successful");
-                    return true;
+                    return false;
                 }
             }
 
-            /*
-                function validate() {
-
-                    var empt5 = document.forms["form1"]["user_contact"].value;
 
 
-                    if (empt5.value.length != 10) {
-                        alert("Invalid number");
-                        empt5.focus();
-                        return false;
-                    }
-
-             */
+            function phonenumber(empt5)
+            {
+                var empt5 = document.forms["form1"]["user_contact"].value;
+                var phoneno = /^\d{10}$/;
+                if(empt5.value.match(phoneno))
+                {
+                    alert("valid Phone Number");
+                    return true;
+                }
+                else
+                {
+                    alert("Not a valid Phone Number");
+                    return false;
+                }
+            }
 
         </script>
 
-    </form>
+
 
 </div>
 
