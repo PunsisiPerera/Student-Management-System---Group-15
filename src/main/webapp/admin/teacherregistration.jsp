@@ -37,7 +37,7 @@
 			<p class=textdecors class=removepadding>Address:</p>
 			<input type="text" class="address" name="useraddress" placeholder="Enter the address" required><br><br>
 			<p class=textdecors class=removepadding>Contact number:</p>
-			<input type="text" class="contact" name="usercontact" placeholder="Enter the contact number" <!--onkeypress="javascript: return onlyNumberKey(event)"-->  required><br><br>
+			<input type="text" class="contact" name="usercontact" placeholder="Enter the contact number" required><br><br>
 			<p class=textdecors class=removepadding>Email:</p>
 			<input type="text" class="email" name="email" placeholder="Enter your email address" required><br><br>
 			<p class=textdecors class=removepadding>Password:</p>

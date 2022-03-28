@@ -323,7 +323,11 @@ input[type=submit],[type=reset]{
 
 
 input[type=submit]:hover {
-    background-color: #adadad;
+    background-color: #FFC300;
+}
+
+input[type=reset]:hover {
+    background-color: #FFC300;
 }
 
 /*additional formattings*/
@@ -361,9 +365,9 @@ p, h1, h2{
 
 }
 
-.tab th,td{
+/*.tab th,td{
     width: 35px;
-}
+}*/
 
 
 .details th,td{
@@ -425,10 +429,141 @@ li a:hover:not(.active) {
     background-color: #FFC300;
 }
 
-/*avatar*/
+/*avatar
 .avatar {
     vertical-align: middle;
     width: 50px;
     height: 50px;
     float: right;
+}*/
+
+/*side nav profile styles*/
+.left {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width:200px;
+    height: 400px;
+    background-color: #FFC300;
+    border-radius:15px;
+    text-align:center;
+    margin-left:20px;
+    margin-top:60px;
+}
+
+.container {
+    padding-left: 0px;
+    padding-top: 60px;
+}
+
+.con1{
+    margin-left: -25px;
+}
+
+.left a{
+    text-decoration: none;
+    color:#fff;
+}
+
+.avatar{
+    height: 200px;
+    width: 200px;
+    margin-top: -40px;
+}
+
+.container input[type=submit]{
+    width:150px;
+    height: 40px;
+    float: left;
+    background-color: #001D3D;
+    font-family:Trebuchet MS;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size:15px;
+    cursor: pointer;
+    text-align:center;
+    display: block;
+    margin: 10px;
+    margin-left: 75px;
+}
+
+.container button{
+    width:150px;
+    height: 40px;
+    float: left;
+    background-color: #001D3D;
+    font-family:Trebuchet MS;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size:15px;
+    cursor: pointer;
+    text-align:center;
+    display: block;
+    margin: 10px;
+    margin-left: 75px;
+}
+
+/*table styles*/
+.tab h1{
+    text-align:center;
+    padding-bottom: 20px;
+    font-family:Trebuchet MS;
+    margin-top:50px;
+}
+
+.tab table{
+    border-collapse: collapse;
+    margin-left: 130px;
+    margin-right:20px;
+    width: 80%;
+    font-family:Trebuchet MS;
+}
+
+.tab th{
+    height:45px;
+    background-color: #FFC300;
+}
+
+
+.tab td{
+    text-align: left;
+    padding: 15px;
+    column-width: 25px;
+}
+
+
+/*buttons*/
+
+.tab input[type=submit]{
+    width: 50px;
+    height: 20px;
+    background-color: #001D3D;
+    font-family:Trebuchet MS;
+    color: white;
+    padding: 3px 3px;
+    border: none;
+    border-radius: 10px;
+    font-size:12px;
+    cursor: pointer;
+    text-align:center;
+    display: block;
+    margin: 0 auto;
+}
+
+button:hover {
+    background-color: #FFC300;
+}
+
+.tab input[type=submit]:hover {
+    background-color: #FFC300;
+}
+
+.delete{
+    margin-left:70px;
+    margin-right:-50px;
+}
+
+.delete button:hover{
+    background-color:red;
 }

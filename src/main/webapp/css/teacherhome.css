@@ -1,0 +1,280 @@
+/*body*/
+body {
+    min-height: 100vh;
+    background-size: cover;
+    margin: 0px;
+    font-size: 15px;
+}
+
+
+/*Navigation bar styles*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #001D3D;
+    font-family:Trebuchet MS;
+}
+
+li {
+    float: left;
+    /*border-right:1px solid #bbb;*/
+}
+
+li:last-child {
+    border-right: none;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #FFC300;
+}
+
+.active {
+    background-color: #FFC300;
+}
+
+
+/*avatar*/
+.avatar {
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    float: right;
+}
+
+
+/*body*/
+.bd {
+    font-family:Trebuchet MS;
+    font-size:15px;
+}
+
+#f1 {
+    padding-left:3%;
+    padding-top: 2%;
+}
+
+
+/*buttons*/
+button, input[type=submit], input[type=reset]{
+    width:25%;
+    height: 50px;
+    float: left;
+    padding-left: 20px;
+    background-color: #001D3D;
+    font-family:Trebuchet MS;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 20px;
+    font-size:15px;
+    cursor: pointer;
+    text-align:center;
+    display: block;
+    margin: 0 auto;
+}
+
+
+button:hover {
+    background-color: #FFC300;
+}
+
+
+input[type=submit]:hover {
+    background-color: #FFC300;
+}
+
+
+.f2{
+    padding-left: 12%;
+}
+
+.f3{
+    padding-left: 33%;
+}
+
+.f4{
+    padding-left: 43%;
+}
+
+/*dropdowns*/
+select{
+    height: 5%;
+    width: 25%;
+}
+
+
+/*vertical nav bar in dashboard*/
+.vertical-menu {
+    width: 200px;
+    height:100%;
+    background-color: #ffd369;
+}
+
+.vertical-menu a {
+    background-color: #eee;
+    color: black;
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+}
+
+.vertical-menu a:hover {
+    background-color: #ccc;
+}
+
+.vertical-menu a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+
+/*cards in homepage*/
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 300px;
+    height: 30%;
+    background-color: #001D3D;
+    border-radius:15px;
+    text-align:center;
+}
+
+.card:hover{
+    background-color: #FFC300;
+}
+
+.container {
+    padding-left: 0px;
+    padding-top: 60px;
+}
+
+.card a{
+    text-decoration: none;
+    color:#fff;
+}
+
+.al0{
+    margin-left:100px;
+    width: 20%;
+}
+
+.al1{
+    margin-left:500px;
+    margin-top:-15.85%;
+    width: 20%;
+}
+
+.al2{
+    margin-left: 900px;
+    margin-top:-15.85%;
+    width: 15%;
+}
+
+.checkfee p{
+    font-family:Trebuchet MS;
+    text-align:center;
+    font-size: 18px;
+}
+
+.checkfee button{
+    width:0px;
+    margin-left:300px ;
+    margin-top: 20px;
+}
+
+
+/* Fixed sidenav, full height */
+.sidenav {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #001D3D;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+/*left side card styles*/
+.left {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width:200px;
+    height: 400px;
+    background-color: #FFC300;
+    border-radius:15px;
+    text-align:center;
+    margin-left:20px;
+    margin-top:60px;
+}
+
+.container {
+    padding-left: 0px;
+    padding-top: 60px;
+}
+
+.con1{
+    margin-left: -25px;
+}
+
+.left a{
+    text-decoration: none;
+    color:#fff;
+}
+
+.avatar{
+    height: 200px;
+    width: 200px;
+    margin-top: -40px;
+}
+
+.container input[type=submit]{
+    width:150px;
+    height: 40px;
+    float: left;
+    background-color: #001D3D;
+    font-family:Trebuchet MS;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size:15px;
+    cursor: pointer;
+    text-align:center;
+    display: block;
+    margin: 10px;
+    margin-left: 75px;
+}
+
+.container button{
+    width:150px;
+    height: 40px;
+    float: left;
+    background-color: #001D3D;
+    font-family:Trebuchet MS;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size:15px;
+    cursor: pointer;
+    text-align:center;
+    display: block;
+    margin: 10px;
+    margin-left: 75px;
+}
+
+.sidenav h2{
+    color:#fff;
+    text-align: center;
+    padding-bottom:20px;
+}
