@@ -27,13 +27,8 @@ public class StudentDao {
             String l_name = rs.getString("l_name");
             String address = rs.getString("address");
             String email = rs.getString("email");
-            String password = rs.getString("password");
-            String confPassword = rs.getString("confPassword");
-            String qrCode = rs.getString("QR_code");
             String contact_no = rs.getString("contact_no");
-            String security = rs.getString("security");
-            students.add(new Student(studentID,f_name,l_name,address,email,password,confPassword,qrCode,contact_no,security));
-
+            students.add(new Student(studentID,f_name,l_name,address,email,contact_no));
         }
         return students;
     }

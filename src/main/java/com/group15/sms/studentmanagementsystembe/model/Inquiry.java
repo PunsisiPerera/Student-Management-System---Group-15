@@ -22,6 +22,12 @@ public class Inquiry {
         this.email = email;
     }
 
+    public Inquiry(int inqId, String status) {
+        this.inquiryID = inqId;
+        this.status =status;
+    }
+
+
     public int getInquiryID() {
         return inquiryID;
     }

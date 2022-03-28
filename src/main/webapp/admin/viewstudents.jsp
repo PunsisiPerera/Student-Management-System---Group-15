@@ -31,7 +31,7 @@
 
     <!--report generation-->
     <div class="abc">
-        <form action="#">
+        <form action="CSVStudentReportServlet">
             <input type="submit" value="Generate Report">
         </form>
     </div>

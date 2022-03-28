@@ -34,6 +34,16 @@
 <div class="right">
   <h1>Reset Password</h1>
   <form method="post" action="ForgotPasswordServlet">
+    <p>Change your password in three easy steps. This will help you
+      to secure your password!</p>
+    <ol class="">
+      <li><span class="text-primary text-medium"></span>Enter
+        your email address below.</li>
+      <li><span class="text-primary text-medium"></span>Our
+        system will send you an OTP to your email</li>
+      <li><span class="text-primary text-medium"></span>Enter the OTP on the
+        next page</li>
+    </ol>
     Enter email address:
     <br />
     <input type="text" id="email" name="email" required>
