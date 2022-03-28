@@ -10,8 +10,10 @@ public class Teacher {
     private String contact_no;
     private String security;
 
+
     public Teacher() {
     }
+
 
     public Teacher(String teacherID, String f_name, String l_name, String address, String email, String password, String contact_no, String security) {
         this.teacherID = teacherID;
@@ -33,6 +35,7 @@ public class Teacher {
     this.contact_no =contact_no;
 
     }
+
 
 
     public String getTeacherID() {

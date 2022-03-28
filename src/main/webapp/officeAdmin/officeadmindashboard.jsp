@@ -29,15 +29,7 @@
 					</div>
 				</div>
 			</div>
-			
-			<div class="al2">
-				<div class="card">
-					<div class="container">
-						<h2><a href="generatereports.jsp">Generate Reports</a></h2> 
-					</div>
-				</div>
-			</div>
-			
+
 			<div class="al3">
 				<div class="card">
 					<div class="container">

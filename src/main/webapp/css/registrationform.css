@@ -69,7 +69,7 @@ input[type=submit]{
 
 
 input[type=submit]:hover {
-  background-color: #adadad;
+  background-color: #FFC300;
 }
 
 /*additional formattings*/
@@ -95,34 +95,34 @@ p, h1, h2{
 
 
 /*Navigation bar styles*/
+
 ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #001D3D;
-  font-family:Trebuchet MS;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #001D3D;
+    font-family:Trebuchet MS;
 }
 
 li {
-  float: left;
-  border-right:1px solid #bbb;
+    float: left;
 }
 
 li:last-child {
-  border-right: none;
+    border-right: none;
 }
 
 li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
 
 li a:hover:not(.active) {
-  background-color: #FFC300;
+    background-color: #FFC300;
 }
 
 

@@ -31,7 +31,7 @@
 
     <!--report generation-->
     <div class="abc">
-        <form action="#">
+        <form action="CSVStudentReportServlet">
             <input type="submit" value="Generate Report">
         </form>
     </div>
@@ -74,9 +74,9 @@
                 </td>
 
                 <td>
-                   <a href="StudentSearchServlet?stdId=<c:out value='${student.studentID}' />"><input type="submit" name="submitbutton4" value="Edit" style="margin-left: -10px;></a>
+                   <a href="StudentSearchServlet?stdId=<c:out value='${student.studentID}' />"><input type="submit" name="submitbutton4" value="Edit" style="margin-left: -10px;"></a>
                    <br /><br />
-                   <a href="delete?id=<c:out value='${student.studentID}' />"><input type="submit" name="submitbutton4" value="Delete" style="margin-left: -5px;"></a>
+                   <a href="delete?id=<c:out value='${student.studentID}' />"> <input type="submit" name="submitbutton4" value="Delete" style="margin-left: -5px;"></a>
                 </td>
             </tr>
         </c:forEach>
