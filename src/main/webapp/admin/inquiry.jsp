@@ -40,11 +40,11 @@
         <thead>
         <tr>
             <th>Inquiry ID</th>
-            <th>Inquiry Status</th>
-            <th style="width: 20%;">Email</th>
-            <th>Subject</th>
-            <th style="width: 27%;">Inquiry</th>
+            <th>Email</th>
+            <th style="width: 10%;">Subject</th>
+            <th style="width: 20%;">Inquiry</th>
             <th>Date</th>
+            <th>Status</th>
             <th>Options</th>
         </tr>
         </thead>
@@ -72,9 +72,9 @@
                 <td>
                     <c:out value="${inquiry.status}" />
                 </td>
-                <td><a href="edit?id=<c:out value='${inquiry.inquiryID}' />"><input type="submit" name="submitbutton4" value="Edit" style="margin-left: -10px;"></a>
+                <td><a href="InquirySearchServlet?inqId=<c:out value='${inquiry.inquiryID}' />"><input type="submit" name="submitbutton4" value="Edit" style="margin-left: -10px;"></a>
                     &nbsp;&nbsp;&nbsp;&nbsp;
-                    <a href="delete?id=<c:out value='${inquiry.inquiryID}' />"><input type="submit" name="submitbutton4" value="Delete" style="margin-left: -5px;"></a></td>
+                    <a href="DeleteInquiryServlet?inqId=<c:out value='${inquiry.inquiryID}' />"><input type="submit" name="submitbutton4" value="Delete" style="margin-left: -5px;"></a></td>
             </tr>
         </c:forEach>
         <!-- } -->

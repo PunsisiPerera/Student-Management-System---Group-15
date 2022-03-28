@@ -37,6 +37,7 @@ public class OfficeAdmin {
         this.position = position;
     }
 
+
     public int getStaffID() {
         return staffID;
     }

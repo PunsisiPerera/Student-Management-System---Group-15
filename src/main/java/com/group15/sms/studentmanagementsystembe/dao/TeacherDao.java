@@ -27,10 +27,8 @@ public class TeacherDao {
             String l_name = rs.getString("l_name");
             String address = rs.getString("address");
             String email = rs.getString("email");
-            String password = rs.getString("password");
             String contact_no = rs.getString("contact_no");
-            String security = rs.getString("security");
-            teachers.add(new Teacher(teacherID,f_name,l_name,address,email,password,contact_no,security));
+            teachers.add(new Teacher(teacherID,f_name,l_name,address,email,contact_no));
         }
         return teachers;
     }
