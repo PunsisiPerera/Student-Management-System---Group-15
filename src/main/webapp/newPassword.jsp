@@ -44,11 +44,11 @@
         <br /><br />
         Enter new password:
         <br />
-        <input type="text" id="email" name="password" placeholder="New Password" required>
+        <input type="password" id="email" name="password" placeholder="New Password" required>
         <br /><br />
         Confirm new password:
         <br />
-        <input type="text" id="password" name="confPassword" placeholder="Confirm new Password" required>
+        <input type="password" id="password" name="confPassword" placeholder="Confirm new Password" required>
         <br /><br />
         <input type="submit" name="resetpassword" value="Submit">
         <input type="reset" name="cancel" value="Cancel">

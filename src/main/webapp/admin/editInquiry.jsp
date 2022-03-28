@@ -27,25 +27,29 @@
 </div>
 
 <div class="hdiv" style="margin-top:-300px;">
-    <form method="post" action="#" name="form3" onsubmit="mySubmit()">
+    <form method="post" action="EditInquiryServlet" name="form3" onsubmit="mySubmit()">
 
         <h1>Update Inquiry</h1><br><br>
 
+        <p class=textdecors class=removepadding>Inquiry ID:</p>
+        <input type="text" class="name" name="inquiryID" value="${selectedInquiry.inquiryID}" readonly>
+        <br />
         <p class=textdecors class=removepadding>Email:</p>
-        <input type="text" class="name" name="email" required>
+        <input type="text" class="name" name="email" value="${selectedInquiry.email}" readonly>
         <br />
         <p class=textdecors class=removepadding>Subject:</p>
-        <input type="text" class="name" name="subject" required>
+        <input type="text" class="name" name="subject" value="${selectedInquiry.subject}" readonly>
         <br />
         <p class=textdecors class=removepadding>Inquiry:</p>
-        <input type="text" class="fullname" name="inquiry" required>
+        <input type="text" class="fullname" name="inquiry" value="${selectedInquiry.inquiry}" readonly>
         <br />
         <p class=textdecors class=removepadding>Status:</p>
-        <select name="type" id="status">
-            <option value="pending">Pending</option>
-            <option value="complete">Completed</option>
+        <select name="status" id="status">
+            <option value=""
+            <option value="Pending">Pending</option>
+            <option value="Completed">Completed</option>
         </select>
-        <br />
+        <br /><br />
         <input type="submit" name="submitbutton4" value="Update">
         <br><br><br><br><br><br>
     </form>
