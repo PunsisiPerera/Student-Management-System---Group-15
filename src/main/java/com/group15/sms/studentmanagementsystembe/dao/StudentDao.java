@@ -80,4 +80,25 @@ public class StudentDao {
         boolean rowUpdated = preparedStatement.executeUpdate()>0;
         return rowUpdated;
     }
+
+
+        public boolean deleteStudent(String studentID) throws ClassNotFoundException, SQLException {
+
+        boolean rawDeleted = false;
+        try {
+            Class.forName("com.mysql.jdbc.Driver");
+            Connection connection = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/student_management_system", "root", "");
+            PreparedStatement preparedStatement = connection.prepareStatement("delete from student where studentID=?");
+
+            preparedStatement.setString(1, studentID);
+            rawDeleted = preparedStatement.executeUpdate() > 0;
+
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return rawDeleted;
+    }
+
+
 }
