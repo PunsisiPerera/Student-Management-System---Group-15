@@ -49,7 +49,7 @@
 			<div class="al4">
 				<div class="card">
 					<div class="container">
-						<h2><a href="./viewexistingclasses.jsp">Manage Subjects + Classes</a></h2>
+						<h2><a href="${pageContext.request.contextPath}/ViewClassServlet">Manage Subjects + Classes</a></h2>
 					</div>
 				</div>
 			</div>

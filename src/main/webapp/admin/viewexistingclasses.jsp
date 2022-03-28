@@ -1,3 +1,4 @@
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -67,44 +68,60 @@
 				<th>Name</th>
 				<th>Year</th>
 				<th>Number of Students</th>
-                                <th>Year</th>
-                                <th>Medium</th>
-                                <th>Teacher Name</th>
-                                <th>Room no</th>
-                                <th>Subject</th>
-                                <th>Options</th>
+				<th>Medium</th>
+				<th>Day</th>
+				<th>Start_time</th>
+				<th>End_time</th>
+				<th>Teacher</th>
+				<th>Classroom</th>
+				<th>Subject</th>
 			</tr>
 		</thead>
-		
+
 		<tbody>
+		<!--   for (Todo todo: todos) {  -->
+		<c:forEach var="classes" items="${classList}">
+
 			<tr>
-				<td align="center">test1</td>
-				<td align="center">test1</td>
-				<td align="center">test1</td>
-				<td align="center">test1</td>
-                                <td align="center">test1</td>
-				<td align="center">test1</td>
-				<td align="center">test1</td>
-				<td align="center">test1</td>
-				<td align="center">test1</td>
-                                <td align="center"><input type="submit" name="submitbutton4" value="Edit"><br>
-                                <input type="submit" name="submitbutton4" value="Delete"><br></td>
+				<td>
+					<c:out value="${classes.classID}" />
+				</td>
+				<td>
+					<c:out value="${classes.name}" />
+				</td>
+				<td>
+					<c:out value="${classes.year}" />
+				</td>
+				<td>
+					<c:out value="${classes.student_count}" />
+				</td>
+				<td>
+					<c:out value="${classes.medium}" />
+				</td>
+				<td>
+					<c:out value="${classes.day}" />
+				</td>
+				<td>
+					<c:out value="${classes.start_time}" />
+				</td>
+				<td>
+					<c:out value="${classes.end_time}" />
+				</td>
+				<td>
+					<c:out value="${classes.teacher}" />
+				</td>
+				<td>
+					<c:out value="${classes.class_room}" />
+				</td>
+				<td>
+					<c:out value="${classes.subject}" />
+				</td>
+
 			</tr>
-                        
-                        <tr>
-				<td align="center">test2</td>
-				<td align="center">test2</td>
-				<td align="center">test2</td>
-				<td align="center">test2</td>
-                                <td align="center">test2</td>
-				<td align="center">test2</td>
-				<td align="center">test2</td>
-				<td align="center">test2</td>
-							<td align="center">test2</td>
-                                <td align="center"><input type="submit" name="submitbutton4" value="Edit"><br>
-                                <input type="submit" name="submitbutton4" value="Delete"><br></td>
-			</tr>
+		</c:forEach>
+		<!-- } -->
 		</tbody>
+
 	</table>
 	<br /><br /><br /><br />
         

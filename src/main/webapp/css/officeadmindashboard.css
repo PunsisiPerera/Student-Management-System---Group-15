@@ -76,37 +76,37 @@ h1{
 	font-size:18px;
 }
 
+
+
 .al1{
-	margin-left:150px;
-	margin-bottom:100px;
-}
-
-
-.al2{
-	margin-left:550px;
-	margin-bottom:100px;
-	margin-top:-200px;
+    margin-left:300px;
+    margin-bottom:100px;
 }
 
 
 .al3{
-	margin-left:950px;
-	margin-bottom:100px;
-	margin-top:-200px;
+    margin-left:750px;
+    margin-bottom:100px;
+
 }
 
-
 .al4{
-	margin-left:750px;
-	margin-bottom:100px;
-	margin-top:0px;
+    margin-left:300px;
+    margin-bottom:100px;
+    margin-top:0px;
 }
 
 .al5{
-	margin-left:300px;
-	margin-bottom:100px;
-	margin-top:-200px;
+    margin-left:750px;
+    margin-bottom:100px;
+    margin-top:0px;
 }
+
+
+
+
+
+.
 
 /*avatar*/
 .avatar {

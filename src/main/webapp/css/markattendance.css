@@ -75,6 +75,7 @@ input[type=submit]:hover {
 /*additional formattings*/
 p, h1, h2{
 	text-align: center;
+    margin-top: 0px;
 }
 
 .textdecors{
