@@ -72,7 +72,8 @@
                 <td>
                     <c:out value="${teacher.contact_no}" />
                 </td>
-                <td align="center"><a href="TeacherSearchServlet?teacherID=<c:out value='${teacher.teacherID}' />"><input type="submit" name="submitbutton4" value="Edit"></a></td>
+                <td align="center">
+                    <a href="TeacherSearchServlet?teacherID=<c:out value='${teacher.teacherID}' />"><input type="submit" name="submitbutton4" value="Edit"></a></td>
             </tr>
         </c:forEach>
         <!-- } -->

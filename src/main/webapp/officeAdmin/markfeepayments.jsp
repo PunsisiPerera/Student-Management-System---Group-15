@@ -7,6 +7,18 @@
 </head>
     <body>
 
+    <!-----------Side Nav bar---------->
+    <div class="sidenav" style="margin-left: -8%;">
+        <h2 style="font-family:Trebuchet MS;">Pragathi Institute</h2>
+        <div class="left">
+            <div class="container">
+                <img src="../img/avatar.png" alt="Avatar" class="avatar">
+                <a href="ofiiceadminaccountsettings.jsp"><button style="width:175px; height: 40px; background-color: #001D3D; font-family:Trebuchet MS; color: white; border: none; border-radius: 20px; font-size:15px; text-align:center; margin: 10px; margin-left: 15px; display: block; cursor: pointer;">Edit Profile</button></a>
+                <a href="../resetpassword.jsp"><button style="width:175px; height: 40px; background-color: #001D3D; font-family:Trebuchet MS; color: white; border: none; border-radius: 20px; font-size:15px; text-align:center; margin: 10px; margin-left: 15px; display: block; cursor: pointer;">Change Password</button></a>
+            </div>
+        </div>
+    </div>
+
       <form action="index.html" method="post">
           
        <div>
@@ -20,8 +32,7 @@
 		</ul>
 	</div>
 
-          <a href="./ofiiceadminaccountsettings.jsp"><img src="../img/avatar.png" alt="Avatar" class="avatar" style="padding:0px;"></a>
-        
+
         <div class="hdiv">
             <h1 align="center" class=removepadding>Mark Fee Payments</h1>
 	    <p class=removepadding>Welcome!<br /><br /><br /><p>

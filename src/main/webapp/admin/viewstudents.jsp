@@ -74,7 +74,8 @@
                 </td>
 
                 <td>
-                   <a href="StudentSearchServlet?stdId=<c:out value='${student.studentID}' />"><input type="submit" name="submitbutton4" value="Edit" style="margin-left: -10px;"></a>
+                   <a href="StudentSearchServlet?stdId=<c:out value='${student.studentID}' />">
+                       <input type="submit" name="submitbutton4" value="Edit" style="margin-left: -10px;"></a>
                    <br /><br />
                    <a href="DeleteStudentServlet?studentID=<c:out value='${student.studentID}' />"> <input type="submit" name="submitbutton4" value="Delete" style="margin-left: -5px;"></a>
                 </td>
