@@ -33,17 +33,12 @@
             <input type="submit" name="submitbutton1" Value="Update"><br /><br /><br />
         </form>
         <a href="../resetpassword.jsp"><button style="width:150px; height: 40px; background-color: #001D3D; font-family:Trebuchet MS; color: white; border: none; border-radius: 20px; font-size:15px; text-align:center; margin: 10px; margin-left: 75px; display: block; cursor: pointer;">Change Password</button></a>
-        <form method="post" action="#">
-            <div class="delete">
-                <input type="submit" value="Delete Account"><br /><br />
-            </div>
-        </form>
     </div>
 </div>
 
 
 <!-----------form------------->
-<div class="right">
+<div class="right" style="margin-top: -30%;">
     <h1>Accounts Settings</h1><br />
     <form method="post" action="#">
         <table border=0>

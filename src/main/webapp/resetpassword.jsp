@@ -9,7 +9,7 @@
 <html>
 <head>
   <title>Reset Password</title>
-  <link rel="stylesheet" href="./css/resetpassword.css">
+  <link rel="stylesheet" href="${pageContext.request.contextPath}/css/resetpassword.css">
   <script src="https://kit.fontawesome.com/e1eaef53f0.js" crossorigin="anonymous"></script>
 </head>
 
@@ -45,8 +45,8 @@
         next page</li>
     </ol>
     Enter email address:
-    <br />
-    <input type="text" id="email" name="email" required>
+    <br /><br />
+    <input type="email" id="email" name="email" required>
     <br /><br />
     <input type="submit" name="resetpassword" value="Submit">
     <input type="reset" name="cancel" value="Cancel">

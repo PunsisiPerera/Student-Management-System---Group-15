@@ -6,6 +6,16 @@
 <link rel="stylesheet" href="${pageContext.request.contextPath}/css/teacherregistration.css">
 <script src="https://kit.fontawesome.com/e1eaef53f0.js" crossorigin="anonymous"></script>
 </head>
+<style>
+    .error
+    {
+        color: red;
+    }
+    .hidden
+    {
+        display:none;
+    }
+</style>
     <body>
 
         <div>
@@ -21,7 +31,7 @@
 
 
 	<div class="hdiv" style="margin-top:-300px;">
-		<form method="post" action="${pageContext.request.contextPath}/TeacherRegisterServlet" name="form2" onsubmit="required()">
+		<form method="post" action="${pageContext.request.contextPath}/TeacherRegisterServlet" name="form2" onsubmit="return required()">
   
                         <h1>Teacher Registration Form</h1><br><br>
 
@@ -38,12 +48,13 @@
 			<input type="text" class="address" name="useraddress" placeholder="Enter the address" required><br><br>
 			<p class=textdecors class=removepadding>Contact number:</p>
 			<input type="text" class="contact" name="usercontact" placeholder="Enter the contact number"  required><br><br>
-			<p class=textdecors class=removepadding>Email:</p>
-			<input type="text" class="email" name="email" placeholder="Enter your email address" required><br><br>
+            <div id="phone_error" class="error hidden">Please enter a valid phone number</div>
+            <p class=textdecors class=removepadding>Email:</p>
+			<input type="email" class="email" name="email" placeholder="Enter your email address" required><br><br>
 			<p class=textdecors class=removepadding>Password:</p>
 			<input type="text" class="pass" name="pass" placeholder="Enter the password" required><br><br>
 			<br /><br /><br />
-			<input type="submit" name="submitbutton4" value="Register" onclick="mySubmit()">
+			<input type="submit" name="submitbutton4" value="Register">
 			<br><br><br><br><br><br>
 
 		</form>
@@ -54,12 +65,12 @@
 
 
 <script>
-	function mySubmit()
-		{
-			alert("Registration Successful!");
-			return true;
-		}
 
+    function validatePhoneNumber(input_str) {
+        var re = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im;
+
+        return re.test(input_str);
+    }
 
 	function required()
 	{
@@ -70,11 +81,15 @@
 		var empt5 = document.forms["form2"]["usercontact"].value;
 		var empt6 = document.forms["form2"]["email"].value;
 		var empt7 = document.forms["form2"]["pass"].value;
-		if (empt1 == "" || empt2 == "" || empt3 == "" || empt4 == "" || empt5 == "" || empt6 == "" || empt7 == "")
+		if (empt1 == "" || empt2 == "" || empt3 == "" || empt4 == "" || empt5 == "" || !validatePhoneNumber(empt5)|| empt6 == "" || empt7 == "")
 		{
-			alert("Please input a Value");
-			return false;
-		}
+            document.getElementById('phone_error').classList.remove('hidden');
+            return false;
+        }
+        else {
+            document.getElementById('phone_error').classList.add('hidden');
+            alert("Registration Successfull!");
+        }
 
 	}
 

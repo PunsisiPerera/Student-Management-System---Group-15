@@ -1,3 +1,4 @@
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%--
   Created by IntelliJ IDEA.
   User: 07688
@@ -47,33 +48,34 @@
 <!----------4 Dropdowns------------>
 <br />
 <center>
-    <form action="#" style="font-family:Trebuchet MS; margin-left: 20%;">
+    <form action="${pageContext.request.contextPath}/EnrollClassServlet" style="font-family:Trebuchet MS; margin-left: 20%;">
 
-        <select name="cars" id="cars">
-            <option value="year">Year</option>
-            <option value="saab">2022</option>
-            <option value="opel">2023</option>
-            <option value="audi">2024</option>
+        <select name="year" id="cars">
+            <option >Year</option>
+            <option value="2022">2022</option>
+            <option value="2023">2023</option>
+            <option value="2024">2024</option>
         </select>
 
-        <select name="cars" id="cars">
-            <option value="subject">Subject</option>
-            <option value="saab">Combined Maths</option>
-            <option value="opel">Physics</option>
-            <option value="audi">Chemistry</option>
+        <select name="subject" id="cars">
+            <option >Subject</option>
+            <option value="Combined Mathematics">Combined Maths</option>
+            <option value="Physics">Physics</option>
+            <option value="Chemistry">Chemistry</option>
+            <option value="Biology">Biology</option>
         </select>
         <br /><br />
-        <select name="cars" id="cars">
-            <option value="stream">Stream</option>
-            <option value="saab">Physical Science</option>
-            <option value="opel">Commerce</option>
-            <option value="audi">Other</option>
+        <select name="stream" id="cars">
+            <option > Stream</option>
+            <option value="Physical Science">Physical Science</option>
+            <option value="Commerce">Commerce</option>
+            <option value="Biological Science">Biological Science</option>
         </select>
 
-        <select name="cars" id="cars">
-            <option value="medium">Medium</option>
-            <option value="saab">Sinhala</option>
-            <option value="opel">English</option>
+        <select name="medium" id="cars">
+            <option >Medium</option>
+            <option value="Sinhala">Sinhala</option>
+            <option value="English">English</option>
         </select>
 
         <br /><br /><br />
@@ -83,7 +85,7 @@
         <div class="f4">
             <input type="submit" value="Submit">
     </form>
-
+</center>
     </div>
     <br /><br /><br /><br /><br /><br />
 
@@ -93,7 +95,6 @@
     <table border=1 width="50%" cellpadding="10px" border="1" style="border-collapse: collapse; font-family:Trebuchet MS; margin-left: 20%;">
         <thead>
         <tr>
-            <th>Select</th>
             <th>Class</th>
             <th>Teacher</th>
             <th>Day</th>
@@ -103,14 +104,15 @@
         </thead>
 
         <tbody>
+    <c:forEach var="selectedClass" items="${selectedClass}">
         <tr>
-            <td align="center"><input type="checkbox" style="background-color:#001D3D;"></td>
-            <td align="center">test1</td>
-            <td align="center">test1</td>
-            <td align="center">test1</td>
-            <td align="center">test1</td>
-            <td align="center">test1</td>
+            <td align="center"><c:out value="${selectedClass.class_name}" /></td>
+            <td align="center"><c:out value="${selectedClass.teacher}" /></td>
+            <td align="center"><c:out value="${selectedClass.day}" /></td>
+            <td align="center"><c:out value="${selectedClass.time}" /></td>
+            <td align="center"><c:out value="${selectedClass.fees}" /></td>
         </tr>
+    </c:forEach>
         </tbody>
     </table>
     <!--<p><i>Note: An admission fee of 1000 LKR has to be paid along with the relevant class fee</I></p>
@@ -122,13 +124,7 @@
 </div>
 -->
 <!---------upload deposit slip------------>
-<div style="padding-left:5%; font-family:Trebuchet MS;">
-    <form action="x" method="post" enctype="multipart/form-data">
-        <br /><br />
-        <input type="submit" value="Enroll now" name="submit" style= "width: 15%; margin-left: 650px;">
-        <br /><br /><br /><br />
-    </form>
-</div>
+
 
 </body>
 </html>
