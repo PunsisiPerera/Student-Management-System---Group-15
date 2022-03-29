@@ -56,7 +56,7 @@ public class OfficeAdminDao {
                 String contact_no = rs.getString("contact_no");
                 String address = rs.getString("address");
                 String position = rs.getString("position");
-                selectedOfficeAdmin = new OfficeAdmin(staffID,f_name,l_name,address,email,contact_no,position);
+                selectedOfficeAdmin = new OfficeAdmin(staffID,f_name,l_name,address,contact_no,email,position);
             }
 
         }catch (Exception exception){

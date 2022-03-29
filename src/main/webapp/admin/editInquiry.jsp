@@ -45,7 +45,7 @@
         <br />
         <p class=textdecors class=removepadding>Status:</p>
         <select name="status" id="status">
-            <option value=""
+            <option value="${selectedInquiry.inquiry}">${selectedInquiry.status}</option>
             <option value="Pending">Pending</option>
             <option value="Completed">Completed</option>
         </select>

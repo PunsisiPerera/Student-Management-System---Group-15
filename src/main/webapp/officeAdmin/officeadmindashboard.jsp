@@ -29,7 +29,13 @@
 					</div>
 				</div>
 			</div>
-
+			<div class="al1">
+				<div class="card">
+					<div class="container">
+						<h2><a href="${pageContext.request.contextPath}/ViewStudentServlet">View Student List</a></h2>
+					</div>
+				</div>
+			</div>
 			<div class="al3">
 				<div class="card">
 					<div class="container">
