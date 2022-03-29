@@ -51,7 +51,7 @@
 
 <div class="hdiv">
 
-    <form action="${pageContext.request.contextPath}/StudentRegisterServlet" method="post" name="form1" onsubmit="return required(); return phonenumber()">
+    <form action="${pageContext.request.contextPath}/StudentRegisterServlet" method="post" name="form1" onsubmit="return required()">
        
         <h1>Student Registration Form</h1><br><br>
         <p class=textdecors class=removepadding>Student ID</p>
@@ -64,30 +64,20 @@
         <input type="text" id="fullname" name="user_name2" placeholder="Enter your full name" required>
         <br />
         <p class=textdecors class=removepadding>Address:</p>
-        <input type="text" id="address" name="useraddress" placeholder="Enter your address" required><br><br>
+        <input type="text" name="useraddress" placeholder="Enter your address" required><br><br>
         <p class=textdecors class=removepadding>Contact number:</p>
-        <input type="text" id="contact" name="usercontact" placeholder="Enter your contact number" required><br><br>
-        <div id="phone_error" class="error hidden">Please enter a valid phone number</div>
+        <input type="text" name="usercontact" placeholder="Enter your contact number" required><br><br>
         <p class=textdecors class=removepadding>Email:</p>
-        <input type="email" id="email" name="email" placeholder="Enter your email address" required><br><br>
+        <input type="email" name="email" placeholder="Enter your email address" required><br><br>
         <p class=textdecors class=removepadding>Password:</p>
-        <input type="password" id="pass1" name="pass" placeholder="Enter your password" required><br><br>
+        <input type="password" name="pass" placeholder="Enter your password" required><br><br>
         <p class=textdecors class=removepadding>Confirm Password:</p>
-        <input type="password" id="pass2" name="confpass" placeholder="Enter your new password again" required><br><br>
+        <input type="password"name="confpass" placeholder="Enter your new password again" required><br><br>
         <br /><br /><br /><br /><br /><br />
         <input type="submit" name="submitbutton4" value="Sign Up"><br><br><br><br><br><br>
 
 
-    </form>
-
         <script>
-
-
-            function validatePhoneNumber(input_str) {
-                var re = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im;
-
-                return re.test(input_str);
-            }
 
 
             function required() {
@@ -100,20 +90,20 @@
                 var empt7 = document.forms["form1"]["pass"].value;
                 var empt8 = document.forms["form1"]["conf_pass"].value;
 
-                if (empt1 == "" || empt2 == "" || empt3 == "" || empt4 == "" || empt5 == "" || !validatePhoneNumber(empt5) || empt6 == "" || empt7 == "" || empt8 == "") {
-                    document.getElementById('phone_error').classList.remove('hidden');
+                if (empt1 == "" || empt2 == "" || empt3 == "" || empt4 == "" || empt5 == ""  || empt6 == "" || empt7 == "" || empt8 == "") {
                     return false;
                 }
                 else {
-                    document.getElementById('phone_error').classList.add('hidden');
                     alert("Registration Successfull!");
                 }
             }
 
 
-
-
         </script>
+
+
+    </form>
+
 
 
 
