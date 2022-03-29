@@ -35,7 +35,7 @@
 	</div>
 
 	<div class="abc">
-		<a href="./createnewclass.jsp"><button style="margin-bottom: 20px;">Create New Class</button></a>
+		<a href="${pageContext.request.contextPath}/admin/createnewclass.jsp"><button style="margin-bottom: 20px;">Create New Class</button></a>
 		<!--<button>Generate Report</button>-->
 	</div>
 
