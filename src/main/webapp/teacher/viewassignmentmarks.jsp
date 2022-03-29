@@ -11,7 +11,7 @@
 <head>
     <meta charset="UTF-8">
     <title>View Assignment Marks | Teacher</title>
-    <link rel="stylesheet" href="../css/teachercreatenotices.css">
+    <link rel="stylesheet" href="../css/teachernotices.css">
     <script src="https://kit.fontawesome.com/e1eaef53f0.js" crossorigin="anonymous"></script>
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,29 +21,18 @@
 
 
 
+<!--side nav bar-->
 <div class="sidebar">
-    <ul class="nav-links">
-        <li>
-            <a href="./teachernotices.jsp"  >
-                <i class='bx bx-notepad' ></i>
-                <span class="links_name">Manage Notices</span>
-            </a>
-        </li>
-        <li>
-            <a href="./attendance.jsp">
-                <i class='bx bx-book-content' ></i>
-                <span class="links_name">Attendance</span>
-            </a>
-        </li>
-        <li>
-            <a href="./assignments.jsp" class="active">
-                <i class='bx bx-book-open' ></i>
-                <span class="links_name">Assignments</span>
-            </a>
-        </li>
-        <li>
 
-    </ul>
+    <h2 style="font-family:Trebuchet MS; color: #ffffff; margin-top: 12%;">Pragathi Institute</h2>
+
+    <div class="left">
+        <div class="container">
+            <img src="../img/avatar.png" alt="Avatar" class="avatar">
+            <a href="./teacheraccountsettings.jsp"><button style="width:175px; height: 40px; background-color: #001D3D; font-family:Trebuchet MS; color: white; border: none; border-radius: 20px; font-size:15px; text-align:center; margin: 10px; margin-left: 10px; display: block; cursor: pointer;">Edit Profile</button></a>
+            <a href="../resetpassword.jsp"><button style="width:175px; height: 40px; background-color: #001D3D; font-family:Trebuchet MS; color: white; border: none; border-radius: 20px; font-size:15px; text-align:center; margin: 10px; margin-left: 10px; display: block; cursor: pointer;">Change Password</button></a>
+        </div>
+    </div>
 </div>
 
 
@@ -62,26 +51,25 @@
     </div>
 
     <div class="home-content">
-        <a href="./teacheraccountsettings.jsp"><img src="../img/avatar.png" alt="Avatar" class="avatar" style="margin-top:-55px;"></a>
 
         <div class="sidenav">
-            <h2>Classes</h2>
-            <button class="dropdown-btn">Class 1
+            <h2 style="text-align: left;">Classes</h2>
+            <button class="dropdown-btn" style="width:15%;">Class 1
                 <i class="fa fa-caret-down"></i>
             </button>
-            <div class="dropdown-container">
+            <div class="dropdown-container" style="width:15%;">
                 <a href="./createassignment.jsp"><i class="fas fa-chevron-right"></i> Create Assignments</a>
-                <a href="./viewassignmentmarks.jsp"><i class="fas fa-chevron-right"></i> View Assignments Marks</a>
+                <a href="./viewassignmentmarks.jsp"><i class="fas fa-chevron-right"></i> Upload Assignments Marks</a>
 
             </div>
-            <div class="tab">
-                <h2>Assignment Marks</h2>
+            <div class="tab" style="margin-left:10%;">
+                <h2 style="margin-left:10%;">Assignment Marks</h2>
                 <table  border="1">
                     <thead>
                     <tr>
-                        <th>Assignment Number</th>
-                        <th>Student Id</th>
-                        <th>Assignment marks</th>
+                        <th style="background-color: #FFC300;">Assignment Number</th>
+                        <th style="background-color: #FFC300;">Student Id</th>
+                        <th style="background-color: #FFC300;">Assignment marks</th>
                     </tr>
                     </thead>
 

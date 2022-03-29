@@ -11,7 +11,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Create Assignments | Teacher</title>
-    <link rel="stylesheet" href="../css/teachercreatenotices.css">
+    <link rel="stylesheet" href="../css/teachernotices.css">
     <script src="https://kit.fontawesome.com/e1eaef53f0.js" crossorigin="anonymous"></script>
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,31 +21,19 @@
 
 
 
+<!--side nav bar-->
 <div class="sidebar">
-    <ul class="nav-links">
-        <li>
-            <a href="./teachernotices.jsp"  >
-                <i class='bx bx-notepad' ></i>
-                <span class="links_name">Manage Notices</span>
-            </a>
-        </li>
-        <li>
-            <a href="./attendance.jsp">
-                <i class='bx bx-book-content' ></i>
-                <span class="links_name">Attendance</span>
-            </a>
-        </li>
-        <li>
-            <a href="./assignments.jsp"class="active">
-                <i class='bx bx-book-open' ></i>
-                <span class="links_name">Assignments</span>
-            </a>
-        </li>
-        <li>
 
-    </ul>
+    <h2 style="font-family:Trebuchet MS; color: #ffffff; margin-top: 12%;">Pragathi Institute</h2>
+
+    <div class="left">
+        <div class="container">
+            <img src="../img/avatar.png" alt="Avatar" class="avatar">
+            <a href="./teacheraccountsettings.jsp"><button style="width:175px; height: 40px; background-color: #001D3D; font-family:Trebuchet MS; color: white; border: none; border-radius: 20px; font-size:15px; text-align:center; margin: 10px; margin-left: 10px; display: block; cursor: pointer;">Edit Profile</button></a>
+            <a href="../resetpassword.jsp"><button style="width:175px; height: 40px; background-color: #001D3D; font-family:Trebuchet MS; color: white; border: none; border-radius: 20px; font-size:15px; text-align:center; margin: 10px; margin-left: 10px; display: block; cursor: pointer;">Change Password</button></a>
+        </div>
+    </div>
 </div>
-
 
 
 <section class="home-section">
@@ -62,16 +50,14 @@
     </div>
 
     <div class="home-content">
-        <a href="./teacheraccountsettings.jsp"><img src="../img/avatar.png" alt="Avatar" class="avatar" style="margin-top:-55px;"></a>
-
         <div class="sidenav">
-            <h2>Classes</h2>
-            <button class="dropdown-btn">Class 1
+            <h2 style="text-align: left;">Classes</h2>
+            <button class="dropdown-btn" style="width:15%;">Class 1
                 <i class="fa fa-caret-down"></i>
             </button>
-            <div class="dropdown-container">
+            <div class="dropdown-container" style="width:15%;">
                 <a href="./createassignment.jsp"><i class="fas fa-chevron-right"></i> Create Assignments</a>
-                <a href="./viewassignmentmarks.jsp"><i class="fas fa-chevron-right"></i> View Assignments Marks</a>
+                <a href="./viewassignmentmarks.jsp"><i class="fas fa-chevron-right"></i> Upload Assignments Marks</a>
 
             </div>
         </div>
@@ -83,7 +69,7 @@
 
             <form method="post">
                 <br /><br /><br /><br /><br>
-                <h1>Create Assignments</h1>
+                <h1 style="padding-bottom: 15px; margin-top: -15px;">Create Assignments</h1>
 
                 <textarea id="Assignment" name="Assignment" rows="10" cols="50" placeholder="Write the Assignment here..."></textarea>
                 <br>
