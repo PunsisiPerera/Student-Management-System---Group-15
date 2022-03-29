@@ -9,7 +9,7 @@
 <html>
 <head>
     <title>Sign In</title>
-    <link rel="stylesheet" href="./css/signin.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/signin.css">
     <script src="https://kit.fontawesome.com/e1eaef53f0.js" crossorigin="anonymous"></script>
 </head>
   <body>
@@ -36,14 +36,17 @@
           <option value="student">Student</option>
       </select>
           <section class="additional"><p class=textdecors class=removepadding>Email:</p></section>
-          <input type="text" id="email" name="email" placeholder="Enter your email address">
+          <input type="email" id="email" name="email" placeholder="Enter your email address">
           <br />
           <section class="additional"><p class=textdecors class=removepadding>Password:</p></section>
           <input type="password" id="pass" name="pass" placeholder="Enter the password">
 
       <input type="submit" name="submitbutton4" value="Sign In">
+      <br /><br />
+      <div style="text-align: center;">
+          <a href="resetpassword.jsp">Reset Password/Forgot Password?</a> <br /><br />
+      </div>
 
-          <a href="resetpassword.jsp">Forgot Password?</a> <br /><br />
 
   </form>
       </p>

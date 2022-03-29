@@ -29,7 +29,7 @@
 
   <form method="post" action="InquiryServlet" name="form1" onsubmit="required()">
     Enter email address:<br />
-    <input type="text" class="email" name="email" required>
+    <input type="email" class="email" name="email" required>
     <br /><br />
     Subject:<br />
     <input type="text" class="email" name="subject" required>

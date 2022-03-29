@@ -5,6 +5,16 @@
     <link rel="stylesheet" href="${pageContext.request.contextPath}/css/employeeregistration.css">
     <script src="https://kit.fontawesome.com/e1eaef53f0.js" crossorigin="anonymous"></script>
 </head>
+<style>
+    .error
+    {
+        color: red;
+    }
+    .hidden
+    {
+        display:none;
+    }
+</style>
 <body>
 
 <div>
@@ -27,7 +37,7 @@
     <div class="hdiv">
 
         <form method="post" action="${pageContext.request.contextPath}/EmployeeRegisterServlet" name="form3"
-              onsubmit="required()">
+              onsubmit="return required()">
             <br/><br/><br/><br/>
             <br/><br/> <br/><br/>
             <h1>Employee Registration Form</h1>
@@ -43,20 +53,37 @@
             <p class=textdecors class=removepadding>Address:</p>
             <input type="text" class="address" name="useraddress" placeholder="Enter the address" required><br><br>
             <p class=textdecors class=removepadding>Contact number:</p>
-            <input type="text" class="contact" name="usercontact" placeholder="Enter the contact number"
+            <input type="text" class="contact" id="phone" name="usercontact" placeholder="Enter the contact number"
                    required><br><br>
+            <div id="phone_error" class="error hidden">Please enter a valid phone number</div>
             <p class=textdecors class=removepadding>Email:</p>
-            <input type="text" class="email" name="email" placeholder="Enter the email address" required><br><br>
-            <p class=textdecors class=removepadding>New Password:</p>
-            <input type="text" class="pass" name="pass" placeholder="Enter the new password" required><br><br>
+            <input type="email" class="email" name="email" placeholder="Enter the email address" required><br><br>
+            <p class=textdecors class=removepadding>Password:</p>
+            <input type="password" id="psw" class="pass" name="pass" placeholder="Enter the password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required><br><br>
 
-            <input type="submit" name="submitbutton4" value="Sign Up" onclick="mySubmit()"><br><br><br><br><br><br>
+            <input type="submit" name="submitbutton4" value="Sign Up"><br><br><br><br><br><br>
+
+            <div id="message">
+                <h3>Password must contain the following:</h3>
+                <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+                <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+                <p id="number" class="invalid">A <b>number</b></p>
+                <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+            </div>
+
 
 
             <script>
-                function mySubmit() {
-                    confirm("Registration Successful!");
+                // function mySubmit() {
+                //     confirm("Registration Successful!");
+                // }
+
+                function validatePhoneNumber(input_str) {
+                    var re = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im;
+
+                    return re.test(input_str);
                 }
+
 
                 function required() {
                     var empt1 = document.forms["form3"]["user_name1"].value;
@@ -66,9 +93,13 @@
                     var empt5 = document.forms["form3"]["usercontact"].value;
                     var empt6 = document.forms["form3"]["email"].value;
                     var empt7 = document.forms["form3"]["pass"].value;
-                    if (empt1 == "" || empt2 == "" || empt3 == "" || empt4 == "" || empt5 == "" || empt6 == "" || empt7 == "") {
-                        alert("Please input a Value");
+                    if (empt1 == "" || empt2 == "" || empt3 == "" || empt4 == "" || empt5 == "" || !validatePhoneNumber(empt5)|| empt6 == "" || empt7 == "" ) {
+                        document.getElementById('phone_error').classList.remove('hidden');
                         return false;
+                    }
+                    else {
+                        document.getElementById('phone_error').classList.add('hidden');
+                        alert("Registration Successfull!");
                     }
 
                 }
@@ -82,6 +113,7 @@
                         return false;
                     return true;
                 }*/
+
 
             </script>
         </form>

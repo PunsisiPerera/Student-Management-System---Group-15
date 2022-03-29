@@ -33,7 +33,7 @@ body {
 }
 
 /* email and password texboxes*/
-input[type=text], [type=password]{
+input[type=text], [type=password], [type=email]{
 	background-color:transparent;
 	width: 100%;
 	padding-bottom: 5px;
