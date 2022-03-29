@@ -6,6 +6,19 @@
 <script src="https://kit.fontawesome.com/e1eaef53f0.js" crossorigin="anonymous"></script>
 </head>
 <body>
+<!-----------Side Nav bar---------->
+<div class="sidenav" style="margin-left: -8%;">
+	<h2 style="font-family:Trebuchet MS;">Pragathi Institute</h2>
+	<div class="left">
+		<div class="container">
+			<img src="../img/avatar.png" alt="Avatar" class="avatar" style="height: 200px; width: 200px; margin-top: -40px;">
+			<a href="ofiiceadminaccountsettings.jsp"><button style="width:175px; height: 40px; background-color: #001D3D; font-family:Trebuchet MS; color: white; border: none; border-radius: 20px; font-size:15px; text-align:center; margin: 10px; margin-left: 15px; display: block; cursor: pointer;">Edit Profile</button></a>
+			<a href="../resetpassword.jsp"><button style="width:175px; height: 40px; background-color: #001D3D; font-family:Trebuchet MS; color: white; border: none; border-radius: 20px; font-size:15px; text-align:center; margin: 10px; margin-left: 15px; display: block; cursor: pointer;">Change Password</button></a>
+		</div>
+	</div>
+</div>
+
+
 <!-----------Nav bar---------->
 <div>
 		<ul>
@@ -17,6 +30,9 @@
 	            
 		</ul>
 	</div>
+
+
+
 
 <!-------- main parts---------->
 		<br /><br /><br />

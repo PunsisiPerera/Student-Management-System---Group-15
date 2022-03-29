@@ -6,6 +6,19 @@
 <script src="https://kit.fontawesome.com/e1eaef53f0.js" crossorigin="anonymous"></script>
 </head>
     <body>
+
+    <!-----------Side Nav bar---------->
+    <div class="sidenav" style="margin-left: -8%;">
+        <h2 style="font-family:Trebuchet MS;">Pragathi Institute</h2>
+        <div class="left">
+            <div class="container">
+                <img src="../img/avatar.png" alt="Avatar" class="avatar">
+                <a href="ofiiceadminaccountsettings.jsp"><button style="width:175px; height: 40px; background-color: #001D3D; font-family:Trebuchet MS; color: white; border: none; border-radius: 20px; font-size:15px; text-align:center; margin: 10px; margin-left: 15px; display: block; cursor: pointer;">Edit Profile</button></a>
+                <a href="../resetpassword.jsp"><button style="width:175px; height: 40px; background-color: #001D3D; font-family:Trebuchet MS; color: white; border: none; border-radius: 20px; font-size:15px; text-align:center; margin: 10px; margin-left: 15px; display: block; cursor: pointer;">Change Password</button></a>
+            </div>
+        </div>
+    </div>
+
         <div>
 		<ul>
 
@@ -16,15 +29,11 @@
 	            <li style="float:right"><a href="officeadmindashboard.jsp" class="active" ><i class="fas fa-columns"></i> Dashboard</a></li>
 		</ul>
 	</div>
-          <a href="./ofiiceadminaccountsettings.jsp"><img src="../img/avatar.png" alt="Avatar" class="avatar" style="padding:0px;"></a>
 
         <div class="hdiv">
-            <h1 align="center" class=removepadding>Mark Attendance</h1>
-	    <p class=removepadding>Welcome!<br /><br /><br /><p>
-
         <form method="post">
               <br /><br /><br /><br /><br>
-              <h1>Mark Attendance</h1>
+              <h1 style="margin-top: -20%;">Mark Attendance</h1>
 
         <p class=textdecors class=removepadding>Select the class:</p>
 
